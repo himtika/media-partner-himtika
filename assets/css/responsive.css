@@ -1,0 +1,914 @@
+@import url('style.css');
+
+@media only screen and (max-width: 7000px){
+	.page-wrapper{
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 1480px){
+	.preloader .icon {
+        background-size: 674px auto;
+    }
+    .preloader .other-icon {
+        background-size: 277px auto;
+        margin-left: 24px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    /* =============== section Footer ================ */
+    .footer-text{
+        display: flex;
+        position: relative;
+        gap: 60px;
+        padding: 20px 20px 0 20px;
+    }
+    .logo-section{
+        margin-left: 0px;
+    }
+    .section-3{
+        margin-top: -20px; 
+    }
+    .tentang-kami {
+        display: flex; justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 768px){
+	.preloader .icon {
+        background-size: 402px auto;
+    }
+    .preloader .other-icon {
+        background-size: 164px auto;
+        margin-left: 14px;
+    }
+    .back-to-top {
+        bottom: 80px; /* Lebih mepet ke bawah */
+        right: 20px;  /* Lebih mepet ke kanan */
+    }
+    .button-back-to-top {
+        padding: 8px;
+    }
+    .button-back-to-top .svg {
+        width: 18px;  /* Icon juga ikut mengecil biar proporsional */
+        height: 18px;
+    }
+    /* Sembunyikan efek 'Top' di mobile biar nggak menuhi layar pas kena jempol */
+    .button-back-to-top::after {
+        display: none !important;
+    }
+    /* Button BackToHIMTIKA */
+    .Btn-parent {
+        bottom: 20px;
+        right: 20px;
+    }
+    /* Button BackToHIMTIKA */
+}
+
+/* ============================================================
+    RESPONSIVE TEMPLATE (MOBILE-FIRST / min-width)
+    Sesuai Standar Breakpoints Tailwind CSS
+    ============================================================ */
+
+/* SM Mode: (Tailwind sm: -> 640px) */
+@media only screen and (min-width: 640px) {
+    .margin-x-section {
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+    
+    /* START NAVBAR */
+    .navbar-menu {
+        margin-left: 52px;
+        margin-right: 52px;
+    }
+    /* END NAVBAR */
+    
+    /* START HERO SECTION */
+    .hero-title {
+        font-size: 48px;
+    }
+    .hero-description {
+        width: 50%;
+        font-size: 14px;
+    }
+    .hero-action {
+        flex-direction: row;
+        width: 100%;
+    }
+    /* END HERO SECTION */
+
+    /* START ABOUT SECTION */
+    .about-title-line-top {
+        height: 4px;
+    }
+    .about-title-line-bottom {
+        height: 6px;
+    }
+    /* END ABOUT SECTION */
+
+    /* START TERMS & CONDITIONS SECTION */
+    .terms-heading-line-top {
+        height: 4px;
+    }
+    .terms-heading-title {
+        font-size: 36px;
+    }
+    .terms-heading-line-bottom {
+        height: 6px;
+    }
+    .terms-container {
+        gap: 16px;
+    }
+    .term-header {
+        padding-top: 14px;
+        padding-right: 14px;
+        padding-bottom: 14px;
+        padding-left: 14px;
+        gap: 12px;
+    }
+    .term-title-wrap {
+        gap: 12px;
+    }
+    .term-title {
+        font-size: 12px;
+    }
+    .term-arrow {
+        font-size: 16px;
+    }
+    .term-item .term-detail {
+        font-size: 12px;
+    }
+    .term-item .term-list .term-list-item .term-link-note {
+        font-size: 12px;
+    }
+    .terms-guidelines-title {
+        font-size: 20px;
+    }
+    .terms-guidelines-container {
+        gap: 20px;
+        margin-top: 32px;
+    }
+    .terms-guideline-card {
+        width: 160px;
+        padding-top: 16px;
+        padding-right: 12px;
+        padding-bottom: 16px;
+        padding-left: 12px;
+    }
+    .terms-guideline-card-icon {
+        width: 32px;
+        height: 32px;
+    }
+    .terms-guideline-card-description {
+        font-size: 12px;
+    }
+    .terms-note {
+        gap: 16px;
+        margin-top: 24px;
+        padding-top: 14px;
+        padding-right: 20px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        border-radius: 16px;
+    }
+    .terms-note-icon {
+        width: 36px;
+        height: 36px;
+    }
+    .terms-note-svg {
+        width: 30px;
+        height: 30px;
+    }
+    .terms-note-text {
+        font-size: 14px;
+    }
+    /* END TERMS & CONDITIONS SECTION */
+
+    /* START COLLABORATING SECTION */
+    .collaborating-heading-line {
+        width: 52px;
+    }
+    .collaborating-heading-title {
+        font-size: 36px;
+    }
+    .collaborating-heading-line-bottom {
+        transform: translateX(0);
+    }
+    .collaborating-heading-description {
+        max-width: 576px;
+    }
+    .collaborating-action {
+        gap: 14px;
+    }
+    .btn-primary {
+        gap: 8px;
+    }
+    .collaborating-action-icon {
+        width: 14px;
+        height: 14px;
+    }
+    .collaborating-action-text {
+        font-size: 12px;
+    }
+    .collaborating-process-container {
+        max-width: 100%;
+    }
+    .collaborating-process-mobile-line {
+        left: 16px;
+    }
+    .collaborating-process-mobile-item {
+        gap: 20px;
+        padding-bottom: 24px;
+    }
+    .collaborating-process-mobile-step {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    .collaborating-process-mobile-title {
+        font-size: 16px;
+    }
+    .collaborating-process-mobile-description {
+        font-size: 14px;
+    }
+    /* END COLLABORATING SECTION */
+
+    /* START FORM PENGAJUAN SECTION */
+    .form-title {
+        font-size: 36px;
+    }
+    .form-field-label-icon {
+        width: 56px;
+    }
+    .form-field-input {
+        font-size: 16px;
+    }
+    .form-grid-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    /* END FORM PENGAJUAN SECTION */
+
+    /* START FOOTER SECTION */
+    .aplikasi-publik {
+        display: flex; justify-content: start;
+    }
+    .align-center-lg { 
+        display: flex; justify-content: end; 
+    }
+    .site-footer { padding-left: 64px; padding-right: 64px; }
+    .footer-logo { width: 260px; }
+    .footer-links-grid { grid-template-columns: repeat(3, 1fr); }
+    .group-title { font-size: 16px; }
+    .group-list li a { font-size: 14px; }
+    .copyright-text { font-size: 14px; font-weight: 500; }
+    /* END FOOTER SECTION */
+}
+
+/* MD Mode: (Tailwind md: -> 768px) */
+@media only screen and (min-width: 768px) {
+    .margin-x-section {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    /* START NAVBAR */
+    .navbar-menu {
+        top: 84px;
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+    /* END NAVBAR */
+
+    /* START HERO SECTION */
+    .hero-title {
+        font-size: 72px;
+    }
+    .hero-description {
+        font-size: 16px;
+    }
+    .hero-action {
+        gap: 24px;
+    }
+    .hero-button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    /* END HERO SECTION */
+
+    /* START ABOUT SECTION */
+    .about-section {
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: 100dvh;
+    }
+    .about-content:hover .about-title-line-top {
+        transform: translateX(320px);
+    }
+    .about-content:hover .about-title-line-bottom {
+        transform: translateX(0);
+    }
+
+    .about-title-line-top {
+        transform: translateX(0);
+    }
+    .about-content:hover .about-title-line-top {
+        transform: translateX(320px);
+    }
+    .about-title {
+        font-size: 48px;
+    }
+    .about-title-line-bottom {
+        width: 240px;
+        transform: translateX(160px);
+    }
+    .about-content:hover .about-title-line-bottom {
+        transform: translateX(0);
+    }
+    .about-description {
+        font-size: 16px;
+    }
+    /* END ABOUT SECTION */
+
+    /* START TERMS & CONDITIONS SECTION */
+    .terms-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .terms-heading-line-top {
+        margin-bottom: 4px;
+    }
+    .terms-heading:hover .terms-heading-line-top {
+        transform: translateX(320px);
+    }
+    .terms-heading-title {
+        font-size: 48px;
+    }
+    .terms-heading:hover .terms-heading-title {
+        letter-spacing: 0.05em;
+    }
+    .terms-heading-line-bottom {
+        width: 240px;
+    }
+    .terms-container {
+        gap: 20px;
+    }
+    .term-header {
+        gap: 16px;
+    }
+    .term-icon {
+        width: 28px;
+        height: 28px;
+    }
+    .term-title {
+        font-size: 14px;
+    }
+    .term-item .term-detail {
+        font-size: 14px;
+    }
+    .term-account {
+        font-size: 14px;
+    }
+    .term-item .term-list .term-list-item .term-link-note {
+        font-size: 14px;
+    }
+    .terms-guidelines-title {
+        font-size: 24px;
+    }
+    .terms-guideline-card {
+        width: 192px;
+        padding-top: 20px;
+        padding-right: 14px;
+        padding-bottom: 20px;
+        padding-left: 14px;
+    }
+    .terms-guideline-card-icon-wrap {
+        height: 52px;
+    }
+    .terms-guideline-card-icon {
+        width: 36px;
+        height: 36px;
+    }
+    .terms-guideline-card-title {
+        font-size: 16px;
+    }
+    .terms-note {
+        margin-bottom: 40px;
+    }
+    .terms-note-text {
+        font-size: 15px;
+    }
+    /* END TERMS & CONDITIONS SECTION */
+
+    /* START COLLABORATING SECTION */
+    .collaborating-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .collaborating-heading:hover .collaborating-heading-title {
+        letter-spacing: 0.05em;
+    }
+    .collaborating-heading-line-bottom {
+        width: 240px;
+    }
+    .collaborating-heading-description {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+    .collaborating-action {
+        gap: 16px;
+    }
+    .btn-primary {
+        gap: 12px;
+        padding-top: 8px;
+        padding-right: 14px;
+        padding-bottom: 8px;
+        padding-left: 14px;
+    }
+    .collaborating-action-icon {
+        width: 16px;
+        height: 16px;
+    }
+    .collaborating-action-text {
+        font-size: 14px;
+    }
+    .collaborating-process {
+        padding-top: 68px;
+    }
+    .collaborating-process-mobile {
+        display: none;
+    }
+    .collaborating-process-desktop {
+        display: flex;
+        align-items: flex-start;
+    }
+    .collaborating-process-desktop-description {
+        max-width: 100%;
+    }
+    /* END COLLABORATING SECTION */
+
+    /* START FORM PENGAJUAN SECTION */
+    .form-title {
+        font-size: 48px;
+    }
+    /* END FORM PENGAJUAN SECTION */
+
+    /* START FOOTER SECTION */
+    .authorized-brand {
+		margin-top: -10px;
+	}
+
+    .logo-address-group {
+		gap: 20px;
+        margin-bottom: 10px;
+	}
+
+    .align-center-lg { 
+        display: flex; justify-content: end; 
+    }
+    .align-right-lg { 
+        display: flex; justify-content: start; 
+    }
+    .group-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; }
+    .group-list li a { font-size: 14px; margin-bottom: 10px; }
+    /* END FOOTER SECTION */
+}
+
+/* LG Mode: (Tailwind lg: -> 1024px) */
+@media only screen and (min-width: 1024px) {
+    .margin-x-section {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    /* START NAVBAR */
+    .nav-icon {
+        display: none;
+    }
+    .navbar-logo-link {
+        width: 176px;
+    }
+    .navbar-menu {
+        display: block;
+        position: static; 
+        top: 0; 
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+    } 
+    .navbar-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .navbar-link-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: auto;
+    }
+    .navbar-link {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 14px;
+    }
+    .navbar-btn {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 14px;
+    }
+    /* END NAVBAR */
+    
+    /* START ABOUT SECTION */
+    .about-pattern-left {
+        width: auto;
+    }
+    .about-title {
+        font-size: 60px;
+    }
+    .about-title-line-bottom {
+        width: 320px;
+        height: 8px;
+    }
+    .about-description {
+        margin-top: 60px;
+        font-size: 18px;
+    }
+    /* END ABOUT SECTION */
+
+    /* START TERMS & CONDITIONS SECTION */
+    .terms-section {
+        border-bottom-right-radius: 150px;
+    }
+    .terms-heading-title-break {
+        display: inline;
+    }
+    .terms-heading-line-bottom {
+        width: 320px;
+        height: 8px;
+    }
+    .terms-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .term-header {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    .term-title-wrap {
+        gap: 16px;
+    }
+    .term-header .term-icon {
+        width: 36px;
+        height: 36px;
+    }
+    .term-header .term-title {
+        font-size: 16px;
+    }
+    .term-arrow {
+        font-size: 20px;
+    }
+    .term-item .term-header .term-social-icon {
+        font-size: 20px;
+    }
+    .term-account {
+        font-size: 16px;
+    }
+    .term-item .term-list .term-list-item .term-link-note {
+        font-size: 16px;
+    }
+    .terms-guidelines-container {
+        gap: 24px;
+        margin-top: 40px;
+    }
+    .terms-guideline-card {
+        width: 216px;
+        padding-top: 28px;
+        padding-right: 16px;
+        padding-bottom: 28px;
+        padding-left: 16px;
+    }
+    .terms-guideline-card-icon-wrap {
+        height: 60px;
+    }
+    .terms-guideline-card-icon {
+        width: 48px;
+        height: 48px;
+    }
+    .terms-guideline-card-title {
+        font-size: 20px;
+    }
+    .terms-guideline-card-description {
+        font-size: 14px;
+    }
+    .terms-note {
+        margin-top: 32px;
+    }
+    /* END TERMS & CONDITIONS SECTION */
+
+    /* START COLLABORATING SECTION */
+    .collaborating-heading {
+        margin-bottom: 48px;
+    }
+    .collaborating-heading-line {
+        width: 60px;
+        height: 4px;
+    }
+    .collaborating-heading-title {
+        font-size: 48px;
+    }
+    .collaborating-heading-line-bottom {
+        bottom: -16px;
+        width: 320px;
+        height: 6px;
+    }
+    .collaborating-heading-description {
+        margin-top: 44px;
+        font-size: 18px;
+    }
+    .collaborating-action {
+        gap: 24px;
+    }
+    .btn-primary {
+        gap: 14px;
+    }
+    .collaborating-action-icon {
+        width: 22px;
+        height: 22px;
+    }
+    .collaborating-action-text {
+        font-size: 16px;
+    }
+    .collaborating-process {
+        padding-top: 80px;
+    }
+
+    .collaborating-process-desktop-step {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .collaborating-process-desktop-title {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .collaborating-process-desktop-description {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    /* END COLLABORATING SECTION */
+    
+    /* START FORM PENGAJUAN SECTION */
+    .form-pengajuan-section {
+        padding-top: 160px;
+        padding-bottom: 100px;
+    }
+    .form-title span {
+        display: inline;
+    }
+    .form-field-input {
+        padding-left: 16px; 
+        padding-right: 16px;
+    }
+    /* END FORM PENGAJUAN SECTION */
+
+    /* START FOOTER SECTION */
+    .site-footer { padding-top: 48px; padding-bottom: 44px; padding-left: 80px; padding-right: 80px; }
+    .footer-main-row { flex-direction: row; justify-content: space-between; }
+    
+    .footer-brand-col { width: 33.33%; margin-top: 0; }
+    .brand-content { align-items: flex-start; }
+    .logo-address-group { align-items: flex-start; }
+    .footer-address { text-align: left; }
+    
+    .footer-grid-col { width: 66.66%; }
+    .footer-links-grid { grid-template-columns: repeat(4, 1fr); }
+    
+    .align-center-lg { display: flex; justify-content: center; }
+    .align-right-lg { display: flex; justify-content: end; }
+    .media-hp-footer { display: flex; justify-content: center; }
+    
+    .footer-bottom { padding-top: 32px; gap: 20px; }
+    .mini-logo { width: 40px; height: 40px; }
+    /* END FOOTER SECTION */
+}
+
+/* XL Mode: (Tailwind xl: -> 1280px) */
+@media only screen and (min-width: 1280px) {
+    .margin-x-section {
+        padding-left: 92px;
+        padding-right: 92px;
+    }
+
+    /* START NAVBAR */
+    .navbar-logo-link {
+        width: 184px;
+    }
+    .navbar-list {
+        gap: 60px;
+    }
+    .navbar-link {
+        font-size: 15px;
+    }
+    .navbar-btn {
+        font-size: 15px;
+    }
+    /* END NAVBAR */
+
+    /* START HERO SECTION */
+    .hero-title {
+        margin-bottom: 20px;
+        font-size: 80px;
+        line-height: 1;
+    }
+    .hero-description {
+        font-size: 18px;
+        line-height: 1.25;
+    }
+    .line-shimmer{
+        width:80px;
+        height: 4px;
+    }
+    /* END HERO SECTION */
+
+    /* START ABOUT SECTION */
+    .about-title-line-top {
+        width: 80px;
+    }
+    .about-title-line-bottom {
+        transform: translateX(200px);
+    }
+    /* END ABOUT SECTION */
+
+    /* START TERMS & CONDITIONS SECTION */
+    .terms-heading-line-top {
+        width: 80px;
+    }
+    .terms-heading-title {
+        font-size: 60px;
+    }
+    .terms-heading-line-bottom {
+        width: 408px;
+        height: 8px;
+    }
+    .terms-container {
+        gap: 28px;
+
+        margin-top: 80px;
+    }
+    /* END TERMS & CONDITIONS SECTION */
+
+    /* START COLLABORATING SECTION */
+    .collaborating-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .collaborating-heading-line {
+        width: 80px;
+    }
+    .collaborating-heading-title {
+        font-size: 60px;
+    }
+    .collaborating-heading-line-bottom {
+        bottom: -20px;
+        width: 408px;
+        height: 8px;
+    }
+    .collaborating-heading-description {
+        font-size: 20px;
+    }
+    .btn-primary {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    /* END COLLABORATING SECTION */
+
+    /* START FORM PENGAJUAN SECTION */
+    .form-title {
+        font-size: 60px;
+    }
+    /* END FORM PENGAJUAN SECTION */
+
+    /* START FOOTER SECTION */
+    .site-footer { padding-left: 88px; padding-right: 88px; }
+    /* END FOOTER SECTION */
+}
+
+/* 2XL Mode: (Tailwind 2xl: -> 1536px) */
+@media only screen and (min-width: 1536px) {
+    .margin-x-section {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    /* START HEADER */
+    .navbar-section {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .nav-icon {
+        width: 42px;
+        height: 25px;
+    }
+    .nav-icon span {
+        height: 3px;
+    }
+    .nav-icon span:nth-child(3),
+    .nav-icon span:nth-child(4) {
+        top: 10px;
+    }
+    .nav-icon span:nth-child(5),
+    .nav-icon span:nth-child(6) {
+        top: 20px;
+    }
+    .nav-open .nav-icon span:nth-child(1) {
+        top: 8px;
+        left: 5px;
+    }
+    .nav-open .nav-icon span:nth-child(2) {
+        top: 8px;
+        left: calc(50% - 5px);
+    }
+    .nav-open .nav-icon span:nth-child(5) {
+        top: 19px;
+        left: 5px;
+    }
+    .nav-open .nav-icon span:nth-child(6) {
+        top: 19px;
+        left: calc(50% - 5px);
+    }
+    .navbar-list {
+        gap: 68px;
+    }
+    /* END HEADER */
+
+
+    /* START HERO SECTION */
+    .hero-title {
+        margin-bottom: 24px;
+        font-size: 96px;
+    }
+    .hero-description {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    .line-shimmer{
+        width:100px;
+    }
+    /* END HERO SECTION */
+
+    /* START ABOUT SECTION */
+    .about-title-line-top {
+        width: 100px;
+    }
+    .about-title {
+        font-size: 72px;
+    }
+    .about-title-line-bottom {
+        width: 384px;
+        height: 10px;
+    }
+    .about-description {
+        margin-top: 80px;
+        font-size: 24px;
+    }
+    /* END ABOUT SECTION */
+
+    /* START TERMS & CONDITIONS SECTION */
+    .terms-heading-line-top {
+        width: 100px;
+    }
+    .terms-heading-title {
+        font-size: 72px;
+    }
+    .terms-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .terms-guidelines {
+        margin-top: 120px;
+    }
+    .terms-guidelines-title {
+        font-size: 30px;
+    }
+    /* END TERMS & CONDITIONS SECTION */
+
+    /* START COLLABORATING SECTION */
+    .collaborating-heading-line {
+        width: 100px;
+    }
+    .collaborating-heading-title {
+        font-size: 72px;
+    }
+    .collaborating-process-desktop-title {
+        font-size: 20px;
+    }
+    .collaborating-process-desktop-description {
+        font-size: 16px;
+    }
+    /* END COLLABORATING SECTION */
+}
