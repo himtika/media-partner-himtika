@@ -1,6 +1,7 @@
 (() => {
   // Ganti URL ini dengan URL Web App hasil deploy Apps Script kamu (Kode.gs)
-  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxh2_Z-usbV-cblTwdWhNXw7nsj5-ykzrOWmSKIs3mPEHBUZptyM_itAD3nBgIysoY/exec';
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz9Lr6yqfYwAh4ztrsYVPxTpGiPybdsv79x-zYGekJV2XqWhLYAxE9RPPj3AHwzzzHA/exec';
+  // const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxh2_Z-usbV-cblTwdWhNXw7nsj5-ykzrOWmSKIs3mPEHBUZptyM_itAD3nBgIysoY/exec';
 
   // Timestamp saat script ini dimuat (dipakai server untuk cek minimum
   // time-on-page). Murni variable JS, TIDAK butuh hidden input di HTML.
@@ -368,16 +369,41 @@
   // request dibatalkan otomatis daripada modal loading macet selamanya.
   const SUBMIT_TIMEOUT_MS = 90 * 1000; // 90 detik
  
+  // async function postForm(url, body) {
+  //   const controller = new AbortController();
+  //   const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
+  //   try {
+  //     const response = await fetch(url, {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+  //       body,
+  //       signal: controller.signal,
+  //     });
+  //     return await response.text();
+  //   } finally {
+  //     clearTimeout(timeoutId);
+  //   }
+  // }
+
   async function postForm(url, body) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
+
     try {
       const response = await fetch(url, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+        },
         body,
+        redirect: 'follow',
         signal: controller.signal,
       });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
       return await response.text();
     } finally {
       clearTimeout(timeoutId);
@@ -529,7 +555,7 @@
         if (err.name === 'AbortError') {
           showError('Pengiriman memakan waktu terlalu lama. Periksa koneksi internet lalu coba lagi.');
         } else {
-          showError('Terjadi kesalahan saat mengirim. Cek koneksi internet lalu coba lagi.');
+          showError('Pengajuan mungkin sudah berhasil dikirim, tetapi sistem belum dapat menerima konfirmasi dari server. Jangan langsung mengirim ulang. Silakan periksa email atau hubungi admin untuk memastikan status pengajuanmu.');
         }
       } finally {
         submitBtn.disabled = false;
