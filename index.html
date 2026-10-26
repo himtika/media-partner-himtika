@@ -1,751 +1,1323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Partner ー HIMTIKA ー Himpunan Mahasiswa Informatika UNSIKA</title>
-    <meta name="description" content="Fasilitas untuk mempermudah proses pengajuan media partner secara langsung melalui website resmi HIMTIKA." />
-    <meta name="keywords" content="HIMTIKA, Himpunan Mahasiswa Informatika, UNSIKA, Media Partner, Informatika" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Media Partner ー HIMTIKA ー Himpunan Mahasiswa Informatika UNSIKA
+    </title>
+    <meta
+      name="description"
+      content="Fasilitas untuk mempermudah proses pengajuan media partner secara langsung melalui website resmi HIMTIKA."
+    />
+    <meta
+      name="keywords"
+      content="HIMTIKA, Himpunan Mahasiswa Informatika, UNSIKA, Media Partner, Informatika"
+    />
 
     <!-- Icon -->
-    <link rel="icon" href="assets/images/logo/HIMTIKA.webp" type="image/x-icon"/>
+    <link
+      rel="icon"
+      href="assets/images/logo/HIMTIKA.webp"
+      type="image/x-icon"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <!-- font -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <!-- Swiper.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 
     <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+  </head>
+  <body>
     <!-- PRELOADER -->
     <div class="preloader">
-        <div class="icon"></div>
-        <div class="other-icon"></div>
+      <div class="icon"></div>
+      <div class="other-icon"></div>
     </div>
 
     <!-- START NAVBAR -->
-    <nav id="navbar" class="margin-x-section w-full absolute top-0 left-0 py-3 2xl:py-3.5 text-white transition-all duration-500 z-1">
-        <div class="flex justify-between items-center selection:bg-white selection:text-[#373A8C] section-container">
-            <a href="index.html" class="lg:w-44 xl:w-46 -translate-x-1 transition-all duration-500 glow-shadow">
-                <img src="assets/images/logo/medpart-header.svg" alt="navbar-image" class="w-full h-full" />
-            </a>
-            <div>
-                <button class="nav-icon block lg:hidden" id="hamburger" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    <header
+      id="navbar"
+      class="margin-x-section w-full absolute top-0 left-0 py-3 2xl:py-3.5 text-white transition-all duration-500 z-1"
+    >
+      <div
+        class="flex justify-between items-center selection:bg-white selection:text-[#373A8C] section-container"
+      >
+        <a
+          href="index.html"
+          class="lg:w-44 xl:w-46 -translate-x-1 transition-all duration-500 glow-shadow"
+        >
+          <img
+            src="assets/images/logo/medpart-header.svg"
+            alt="navbar-image"
+            class="w-full h-full"
+          />
+        </a>
+        <div>
+          <button class="nav-icon block lg:hidden" id="hamburger" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-                <div 
-                    class="hidden absolute top-19 md:top-21 lg:top-0 rounded-2xl mx-6 sm:mx-13 md:mx-16 lg:mx-0 right-0 left-0 py-3 shadow-lg z-20 lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none transition-all duration-500 ease-in-out" 
-                    id="nav-menu">
-                    <ul class="block lg:flex lg:items-center lg:gap-10 xl:gap-15 2xl:gap-17 font-medium  text-center uppercase">
-                        <li>
-                            <span id="home-nav" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
-                                <span class="inline-block py-1 lg:py-0 text-sm lg:text-sm xl:text-[15px] text-white
-                                            tracking-wide
-                                            border-b border-transparent 
-                                            group-hover:border-b-white 
-                                            lg:group-hover:to-selectionBlue lg:group-hover:from-cyanBlue
-                                            group-hover:text-[#C7D2FE] transition duration-300">
-                                Home
-                                </span>
-                            </span>
-                        </li>
-                        <li>
-                            <span id="about-nav" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
-                                <span class="inline-block py-1 lg:py-0 text-sm lg:text-sm xl:text-[15px] text-white
-                                            tracking-wide
-                                            border-b border-transparent 
-                                            group-hover:border-b-white 
-                                            lg:group-hover:to-selectionBlue lg:group-hover:from-cyanBlue
-                                            group-hover:text-[#C7D2FE] transition duration-300">
-                                About Us
-                                </span>
-                            </span>
-                        </li>
-                        <li>
-                            <span id="terms-nav" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
-                                <span class="inline-block py-1 lg:py-0 text-sm lg:text-sm xl:text-[15px] text-white
-                                            tracking-wide
-                                            border-b border-transparent 
-                                            group-hover:border-b-white 
-                                            lg:group-hover:to-selectionBlue lg:group-hover:from-cyanBlue
-                                            group-hover:text-[#C7D2FE] transition duration-300">
-                                Terms & Conditions
-                                </span>
-                            </span>
-                        </li>
-                        <li>
-                            <a href="form-medpart.html" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
-                                <span class="inline-block px-5 py-1 lg:py-2 text-sm lg:text-sm xl:text-[15px] text-white
-                                            tracking-wide
-                                            rounded-full
-                                            font-semibold bg-[#5358DD]
-                                            group-hover:text-[#252642] group-hover:font-semibold group-hover:bg-white transition duration-300">
-                                Ajukan Kerja Sama
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          <nav
+            class="hidden absolute top-19 md:top-21 lg:top-0 rounded-2xl mx-6 sm:mx-13 md:mx-16 lg:mx-0 right-0 left-0 py-3 shadow-lg z-20 lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none transition-all duration-500 ease-in-out"
+            id="nav-menu"
+          >
+            <ul
+              class="block lg:flex lg:items-center lg:gap-10 xl:gap-15 2xl:gap-17 font-medium text-center uppercase"
+            >
+              <li>
+                <span
+                  id="home-nav"
+                  class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300"
+                >
+                  <span
+                    class="inline-block py-1 lg:py-0 text-sm lg:text-sm xl:text-[15px] text-white tracking-wide border-b border-transparent group-hover:border-b-white lg:group-hover:to-selectionBlue lg:group-hover:from-cyanBlue group-hover:text-[#C7D2FE] transition duration-300"
+                  >
+                    Home
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span
+                  id="about-nav"
+                  class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300"
+                >
+                  <span
+                    class="inline-block py-1 lg:py-0 text-sm lg:text-sm xl:text-[15px] text-white tracking-wide border-b border-transparent group-hover:border-b-white lg:group-hover:to-selectionBlue lg:group-hover:from-cyanBlue group-hover:text-[#C7D2FE] transition duration-300"
+                  >
+                    About Us
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span
+                  id="terms-nav"
+                  class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300"
+                >
+                  <span
+                    class="inline-block py-1 lg:py-0 text-sm lg:text-sm xl:text-[15px] text-white tracking-wide border-b border-transparent group-hover:border-b-white lg:group-hover:to-selectionBlue lg:group-hover:from-cyanBlue group-hover:text-[#C7D2FE] transition duration-300"
+                  >
+                    Terms & Conditions
+                  </span>
+                </span>
+              </li>
+              <li>
+                <a
+                  href="form-medpart.html"
+                  class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300"
+                >
+                  <span
+                    class="inline-block px-5 py-1 lg:py-2 text-sm lg:text-sm xl:text-[15px] text-white tracking-wide rounded-full font-semibold bg-[#5358DD] group-hover:text-[#252642] group-hover:font-semibold group-hover:bg-white transition duration-300"
+                  >
+                    Ajukan Kerja Sama
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </nav>   
+      </div>
+    </header>
     <!-- END NAVBAR -->
-    
+
     <!-- Start Main Section -->
     <main class="main-section">
-        <!-- Start Hero Section -->
-        <section id="hero-section" class="hero-section">
-            <img src="./assets/images/hero-section/hero-pattern.svg" alt="pattern-hero-section"
-                class="hero-pattern"
+      <!-- Start Hero Section -->
+      <section id="hero-section" class="hero-section">
+        <img
+          src="./assets/images/hero-section/hero-pattern.svg"
+          alt="pattern-hero-section"
+          class="hero-pattern"
+        />
+        <div class="hero-content">
+          <div class="line-shimmer"></div>
+          <h1 class="hero-title">Partner with us</h1>
+          <p class="hero-description">
+            " Fasilitas untuk mempermudah proses pengajuan media partner secara
+            langsung melalui website resmi HIMTIKA. "
+          </p>
+          <div class="hero-action">
+            <a
+              href="https://www.instagram.com/himtika_unsika?utm_source=qr&igsh=bXl0bm81cGFkMG52"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero-button"
             >
-            <div class="hero-content">
-                <div class="line-shimmer"></div>
-                <h1 class="hero-title">Partner with us</h1>
-                <p class="hero-description">" Fasilitas untuk mempermudah proses pengajuan media partner secara langsung melalui website resmi HIMTIKA. "</p>
-                <div class="hero-action">
-                    <a href="https://www.instagram.com/himtika_unsika?utm_source=qr&igsh=bXl0bm81cGFkMG52" target="_blank" rel="noopener noreferrer" class="hero-button">
-                        Hubungi via Instagram
-                    </a>
-                    <a href="https://wa.me/62881024076309?text=Halo,%20saya%20melihat%20informasi%20ini%20dari%20website%20HIMTIKA.%20Saya%20ingin%20bekerja%20sama%20sebagai%20media%20partner" target="_blank" rel="noopener noreferrer" class="hero-button">
-                        Chat WhatsApp Admin
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-bottom-shape"></div>
-        </section>
-        <!-- End Hero Section -->
-        
-        <!-- Start About Us Section -->
-        <section id="about-section" class="about-section margin-x-section section-container">
-            <img src="./assets/images/about-section/right-pattern.svg" alt="pattern-about-section"
-                class="about-pattern-right"
+              Hubungi via Instagram
+            </a>
+            <a
+              href="https://wa.me/62881024076309?text=Halo,%20saya%20melihat%20informasi%20ini%20dari%20website%20HIMTIKA.%20Saya%20ingin%20bekerja%20sama%20sebagai%20media%20partner"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero-button"
             >
-            <div class="about-content">
-                <div class="about-title-line-top"></div>
-                <h1 class="about-title">Get to Know <span class="about-title-highlight">Media Partner</span></h1>
-                <div class="about-title-line-bottom "></div>
+              Chat WhatsApp Admin
+            </a>
+          </div>
+        </div>
 
-                <p class="about-description">Media partner merupakan bentuk kerja sama yang terjalin antara penyelenggara event dengan Himpunan Mahasiswa Informatika UNSIKA (HIMTIKA). <br>Kerja sama yang menguntungkan bagi kedua belah pihak. Kerja sama yang dimaksud adalah kerja sama dalam bentuk advertising dan mempublikasikan media promosi penyelenggara event di akun sosial media HIMTIKA yang dilakukan untuk menyebarluaskan event.</p>
-            </div>
-            <img src="./assets/images/about-section/left-pattern.svg" alt="pattern-about-section"
-                class="about-pattern-left"
-            >
-        </section>
-        <!-- End About Us Section -->
+        <div class="hero-bottom-shape"></div>
+      </section>
+      <!-- End Hero Section -->
 
-        <!-- Start Term Condition Section -->
-        <section id="term-and-conditions-section" class=" terms-section margin-x-section">
-            <div class="section-container">
-                <img src="./assets/images/terms-section/terms-pattern.svg" alt="pattern-terms-section"
-                    class="terms-pattern"
+      <!-- Start About Us Section -->
+      <section
+        id="about-section"
+        class="about-section margin-x-section section-container"
+      >
+        <img
+          src="./assets/images/about-section/right-pattern.svg"
+          alt="pattern-about-section"
+          class="about-pattern-right"
+        />
+        <div class="about-content">
+          <div class="about-title-line-top"></div>
+          <h1 class="about-title">
+            Get to Know <span class="about-title-highlight">Media Partner</span>
+          </h1>
+          <div class="about-title-line-bottom"></div>
+
+          <p class="about-description">
+            Media partner merupakan bentuk kerja sama yang terjalin antara
+            penyelenggara event dengan Himpunan Mahasiswa Informatika UNSIKA
+            (HIMTIKA). <br />Kerja sama yang menguntungkan bagi kedua belah
+            pihak. Kerja sama yang dimaksud adalah kerja sama dalam bentuk
+            advertising dan mempublikasikan media promosi penyelenggara event di
+            akun sosial media HIMTIKA yang dilakukan untuk menyebarluaskan
+            event.
+          </p>
+        </div>
+        <img
+          src="./assets/images/about-section/left-pattern.svg"
+          alt="pattern-about-section"
+          class="about-pattern-left"
+        />
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- Start Term Condition Section -->
+      <section
+        id="term-and-conditions-section"
+        class="terms-section margin-x-section"
+      >
+        <div class="section-container">
+          <img
+            src="./assets/images/terms-section/terms-pattern.svg"
+            alt="pattern-terms-section"
+            class="terms-pattern"
+          />
+          <div class="terms-content">
+            <div class="terms-heading group">
+              <div class="terms-heading-line-top"></div>
+              <h1 class="terms-heading-title">
+                Media Partner
+                <span class="terms-heading-title-break"
+                  >terms & conditions</span
                 >
-                <div class="terms-content">
-                    <div class="terms-heading group">
-                        <div class="terms-heading-line-top"></div>
-                        <h1 class="terms-heading-title">
-                            Media Partner 
-                            <span class="terms-heading-title-break">terms & conditions</span>
-                            <div class="terms-heading-line-bottom"></div>
-                        </h1>
-                    </div>
-    
-                    <div class="terms-container">
-                        <div class="term-item">
-                            <input type="checkbox" name="term-accordion" id="term-1" class="accordion-toggle" />
-                            <label for="term-1" class="term-header">
-                                <div class="term-title-wrap">
-                                    <svg class="term-icon" width="55" height="68" viewBox="0 0 55 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.875 0C5.05164 0 3.30295 0.716426 2.01364 1.99167C0.724328 3.26692 0 4.99653 0 6.8V61.2C0 63.0035 0.724328 64.7331 2.01364 66.0083C3.30295 67.2836 5.05164 68 6.875 68H48.125C49.9484 68 51.697 67.2836 52.9864 66.0083C54.2757 64.7331 55 63.0035 55 61.2V20.4L34.375 0H6.875ZM6.875 6.8H30.9375V23.8H48.125V61.2H6.875V6.8ZM13.75 34V40.8H41.25V34H13.75ZM13.75 47.6V54.4H30.9375V47.6H13.75Z" fill="white" />
-                                    </svg>
-                                    <p class="term-title">Wajib mengikuti prosedur dan ketentuan media partner yang telah ditetapkan oleh HIMTIKA.</p>
-                                </div>
-                                <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
-                            </label>
-                            <div class="term-content">
-                                <p class="term-detail">-</p>
-                            </div>
-                        </div>
-                        <div class="term-item">
-                            <input type="checkbox" name="term-accordion" id="term-2" class="accordion-toggle" />
-                            <label for="term-2" class="term-header">
-                                <div class="term-title-wrap">
-                                    <svg class="term-icon" width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M31.5 0C48.825 0 63 14.175 63 31.5C63 48.825 48.825 63 31.5 63C14.175 63 0 48.825 0 31.5C0 14.175 14.175 0 31.5 0ZM31.5 6.3C25.515 6.3 20.16 8.19 16.065 11.655L51.345 46.935C54.495 42.525 56.7 37.17 56.7 31.5C56.7 17.64 45.36 6.3 31.5 6.3ZM46.935 51.345L11.655 16.065C8.19 20.16 6.3 25.515 6.3 31.5C6.3 45.36 17.64 56.7 31.5 56.7C37.485 56.7 42.84 54.81 46.935 51.345Z" fill="white"/>
-                                    </svg>
-                                    <p class="term-title">Materi promosi tidak boleh mengandung unsur politik, pornografi, judi, penipuan, atau SARA.</p>
-                                </div>
-                                <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
-                            </label>
-                            <div class="term-content">
-                                <p class="term-detail">-</p>
-                            </div>
-                        </div>
-                        <div class="term-item">
-                            <input type="checkbox" name="term-accordion" id="term-3" class="accordion-toggle" />
-                            <label for="term-3" class="term-header">
-                                <div class="term-title-wrap">
-                                    <svg class="term-icon" width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M40.8 34H45.9V43.588L54.196 48.382L51.646 52.802L40.8 46.546V34ZM6.8 0H54.4C56.2035 0 57.9331 0.716426 59.2083 1.99167C60.4836 3.26692 61.2 4.99653 61.2 6.8V27.54C65.416 31.824 68 37.706 68 44.2C68 50.5122 65.4925 56.5658 61.0291 61.0291C56.5658 65.4925 50.5122 68 44.2 68C37.706 68 31.824 65.416 27.54 61.2H6.8C4.99653 61.2 3.26692 60.4836 1.99167 59.2083C0.716426 57.9331 0 56.2035 0 54.4V6.8C0 4.99653 0.716426 3.26692 1.99167 1.99167C3.26692 0.716426 4.99653 0 6.8 0ZM6.8 44.2V54.4H22.678C21.216 51.306 20.4 47.838 20.4 44.2H6.8ZM6.8 20.4H27.2V10.2H6.8V20.4ZM54.4 20.4V10.2H34V20.4H54.4ZM6.8 37.4H21.386C22.542 33.49 24.684 29.988 27.54 27.2H6.8V37.4ZM44.2 27.71C39.8266 27.71 35.6323 29.4473 32.5398 32.5398C29.4473 35.6323 27.71 39.8266 27.71 44.2C27.71 53.312 35.088 60.69 44.2 60.69C46.3655 60.69 48.5098 60.2635 50.5104 59.4348C52.5111 58.6061 54.329 57.3914 55.8602 55.8602C57.3914 54.329 58.6061 52.5111 59.4348 50.5104C60.2635 48.5098 60.69 46.3655 60.69 44.2C60.69 35.088 53.312 27.71 44.2 27.71Z"
-                                            fill="white" />
-                                    </svg>
-                                    <p class="term-title">Pihak pengaju bisa memilih jadwal sendiri atau mengikuti jadwal HIMTIKA.</p>
-                                </div>
-                                <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
-                            </label>
-                            <div class="term-content">
-                                <p class="term-detail"><b>Jadwal publikasi berupa feeds minimal 5 hari setelah submit form</b> media partner HIMTIKA.
-                                <br>
-                                Jika publikasi lebih cepat dari H+5 setelah submit form, <b>publikasi hanya bisa melalui Story Instagram HIMTIKA</b>.</p>
-                            </div>
-                        </div>               
-                        <div class="term-item">
-                            <input type="checkbox" name="term-accordion" id="term-4" class="accordion-toggle" />
-                            <label for="term-4" class="term-header">
-                                <div class="term-title-wrap">
-                                    <svg class="term-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 12 12">
-                                        <path d="M0 0h12v12H0z" fill="none" />
-                                        <path fill="#fff" d="M4 8a4.03 4.03 0 0 0-3.995 3.41c-.04.31.191.59.504.59h6.982c.313 0 .545-.28.504-.59C7.698 9.45 6 8 4 8m0-6a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m5.5-2a.5.5 0 0 1 .492.41L10 .5V2h1.5a.5.5 0 0 1 .492.41L12 2.5a.5.5 0 0 1-.5.5H10v1.5a.5.5 0 0 1-.992.09L9 4.5V3H7.5a.5.5 0 0 1-.492-.41L7 2.5a.5.5 0 0 1 .5-.5H9V.5a.5.5 0 0 1 .5-.5" />
-                                    </svg>
-                                    <p class="term-title">Pihak pengaju wajib mengikuti sosial media  HIMTIKA minimal 10 akun</p>
-                                </div>
-                                <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
-                            </label>
-                            <div class="term-content">
-                                <ul class="term-list">
-                                    <li class="term-list-item">
-                                        <a href="https://www.instagram.com/himtika_unsika" target="_blank" class="term-link"> 
-                                            <i class="fa-brands fa-instagram term-social-icon"></i>
-                                            <span class="term-account">himtika_unsika</span>
-                                        </a>
-                                        <span class="term-link-note">(click usn to direct)</span>
-                                    </li>
-                                    <li class="term-list-item">
-                                        <a href="https://www.tiktok.com/@himtika_unsika" target="_blank" class="term-link">
-                                            <i class="fa-brands fa-tiktok term-social-icon"></i>
-                                            <span class="term-account">himtika_unsika</span>
-                                        </a>
-                                        <span class="term-link-note">(click usn to direct)</span>
-                                    </li>
-                                </ul>
-                                <p class="term-detail">
-                                    <u><strong>NOTE:</strong> Pihak pengaju harus tetap mengikuti sosial media HIMTIKA sesuai ketentuan selama satu periode.</u>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="term-item">
-                            <input type="checkbox" name="term-accordion" id="term-5" class="accordion-toggle" />
-                            <label for="term-5" class="term-header">
-                                <div class="term-title-wrap">
-                                    <svg class="term-icon" width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M28.2122 11.8224H38.0757L48.8926 0.972534C49.1983 0.664371 49.5619 0.419775 49.9625 0.252857C50.3632 0.085938 50.7929 0 51.227 0C51.661 0 52.0907 0.085938 52.4914 0.252857C52.892 0.419775 53.2557 0.664371 53.5613 0.972534L62.0439 9.48801C62.6563 10.104 63 10.9373 63 11.8059C63 12.6745 62.6563 13.5078 62.0439 14.1238L54.5148 21.6859H28.2122V28.2615C28.2122 29.1335 27.8658 29.9698 27.2492 30.5864C26.6326 31.2029 25.7963 31.5493 24.9243 31.5493C24.0524 31.5493 23.2161 31.2029 22.5995 30.5864C21.9829 29.9698 21.6365 29.1335 21.6365 28.2615V18.398C21.6365 16.6541 22.3293 14.9815 23.5625 13.7483C24.7957 12.5152 26.4682 11.8224 28.2122 11.8224ZM8.4852 28.2615V41.4128L0.956076 48.9419C0.343715 49.558 0 50.3913 0 51.2599C0 52.1285 0.343715 52.9618 0.956076 53.5778L9.43867 62.0933C9.74432 62.4014 10.108 62.646 10.5086 62.8129C10.9093 62.9799 11.339 63.0658 11.773 63.0658C12.2071 63.0658 12.6368 62.9799 13.0375 62.8129C13.4381 62.646 13.8017 62.4014 14.1074 62.0933L28.2122 47.9885H41.3635C42.2355 47.9885 43.0717 47.6421 43.6883 47.0255C44.3049 46.4089 44.6513 45.5726 44.6513 44.7006V41.4128H47.9391C48.8111 41.4128 49.6474 41.0664 50.264 40.4498C50.8806 39.8332 51.227 38.997 51.227 38.125V34.8372H54.5148C55.3868 34.8372 56.2231 34.4908 56.8396 33.8742C57.4562 33.2576 57.8026 32.4213 57.8026 31.5493V28.2615H34.7878V31.5493C34.7878 33.2933 34.095 34.9659 32.8619 36.199C31.6287 37.4322 29.9561 38.125 28.2122 38.125H21.6365C19.8925 38.125 18.22 37.4322 16.9868 36.199C15.7536 34.9659 15.0609 33.2933 15.0609 31.5493V21.6859L8.4852 28.2615Z"
-                                            fill="white" />
-                                    </svg>
-                                    <p class="term-title">Pihak pengaju wajib bersedia menjadi media partner balik apabila pihak HIMTIKA mengajukan.</p>
-                                </div>
-                                <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
-                            </label>
-                            <div class="term-content">
-                                <p class="term-detail">-</p>
-                            </div>
-                        </div>
-                        <div class="term-item">
-                            <input type="checkbox" name="term-accordion" id="term-6" class="accordion-toggle" />
-                            <label for="term-6" class="term-header">
-                                <div class="term-title-wrap">
-                                    <svg class="term-icon" width="69" height="60" viewBox="0 0 69 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M34.5 0L0 59.5909H69M34.5 12.5455L58.1168 53.3182H10.8832M31.3636 25.0909V37.6364H37.6364V25.0909M31.3636 43.9091V50.1818H37.6364V43.9091"
-                                            fill="white" />
-                                    </svg>
-                                    <p class="term-title">Jika tidak melakukan kewajiban yang tertera pada ketentuan, pihak pengaju dikenakan sanksi.</p>
-                                </div>
-                                <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
-                            </label>
-                            <div class="term-content">
-                                <p class="term-detail">-</p>
-                            </div>
-                        </div>
-                        <div class="hidden 2xl:block"></div>
-                        <div class="term-item">
-                            <input type="checkbox" name="term-accordion" id="term-7" class="accordion-toggle" />
-                            <label for="term-7" class="term-header">
-                                <div class="term-title-wrap">
-                                    <svg class="term-icon" width="70" height="64" viewBox="0 0 70 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M59.1782 34.4943L41.14 52.5326H33.8613V45.254L51.8996 27.2157L59.1782 34.4943ZM69.9379 31.9626C69.9379 32.912 68.9885 33.8614 68.0392 34.8107L60.1276 42.7223L57.2795 39.8741L65.5075 31.6461L63.6087 29.7474L61.3935 31.9626L54.1149 24.684L61.077 18.0383C61.7099 17.4054 62.9758 17.4054 63.9252 18.0383L68.3556 22.4687C68.9885 23.1017 68.9885 24.3675 68.3556 25.3169C67.7227 25.9498 67.0898 26.5827 67.0898 27.2157C67.0898 27.8486 67.7227 28.4815 68.3556 29.1144C69.305 30.0638 70.2544 31.0132 69.9379 31.9626ZM6.32922 56.963V6.32922H28.4815V22.1523H44.3046V26.8992L50.6338 20.57V18.9877L31.6461 0H6.32922C2.84815 0 0 2.84815 0 6.32922V56.963C0 60.4441 2.84815 63.2922 6.32922 63.2922H44.3046C47.7856 63.2922 50.6338 60.4441 50.6338 56.963H6.32922ZM31.6461 47.7856C31.0132 47.7856 30.3803 48.1021 30.0638 48.1021L28.4815 41.14H23.7346L17.0889 46.5198L18.9877 37.9753H14.2408L11.0761 53.7984H15.8231L25.0004 45.5704L26.8992 52.849H30.0638L31.6461 52.5326V47.7856Z" fill="white"/>
-                                    </svg>
-                                    <p class="term-title">Pihak pengaju wajib mengisi dan menandatangani MoU Media Partner HIMTIKA.</p>
-                                </div>
-                                <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
-                            </label>
-                            <div class="term-content">
-                                <p class="term-detail"><u><strong>NOTE:</strong> Sebelum submit form pengajuan media partner, MoU harus sudah di Tanda Tangani kedua pihak.</u></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="terms-guidelines">
-                    <h1 class="terms-guidelines-title">Ketentuan umum publikasi kerja sama</h1>
-                    <div class="terms-guidelines-container">
-                        <div class="terms-guideline-card">
-                            <div class="terms-guideline-card-icon-wrap">
-                                <svg class="terms-guideline-card-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.18811 14.4389H18.5643V26.8151H6.18811V14.4389ZM6.18811 6.18811H43.3166V10.3135H6.18811V6.18811ZM43.3166 14.4389V18.5643H22.6897V14.4389H43.3166ZM43.3166 22.6897V26.8151H22.6897V22.6897H43.3166ZM6.18811 30.9405H35.0659V35.0659H6.18811V30.9405ZM6.18811 39.1912H43.3166V43.3166H6.18811V39.1912Z"
-                                        fill="#5358DD" />
-                                </svg>
-                            </div>
-                            <h2 class="terms-guideline-card-title">Format Konten</h2>
-                            <p class="terms-guideline-card-description">Konten berupa gambar statis, bukan dalam bentuk video, GIF, atau animasi lainnya.</p>
-                        </div>
-                        <div class="terms-guideline-card">
-                            <div class="terms-guideline-card-icon-wrap">
-                                <svg class="terms-guideline-card-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_8_202)">
-                                        <path
-                                            d="M49.5047 12.0571L24.7524 1.74036L0 12.0571L24.7524 22.3738L49.5047 12.0571ZM24.7524 26.4927L10.7421 19.9565L0 24.4332L24.7524 34.7499L49.5047 24.4332L38.7626 19.9565L24.7524 26.4927ZM24.7524 38.8689L11.2546 32.12L0 36.8094L24.7524 47.1261L49.5047 36.8094L38.2501 32.12L24.7524 38.8689Z"
-                                            fill="#5358DD" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_8_202">
-                                            <path
-                                                d="M0 0H37.5047C44.1321 0 49.5047 5.37258 49.5047 12V49.5047H12C5.37257 49.5047 0 44.1321 0 37.5047V0Z"
-                                                fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <h2 class="terms-guideline-card-title">Rangkaian Pamflet</h2>
-                            <p class="terms-guideline-card-description">Satu unggahan feed boleh memuat beberapa pamflet, selama masih dalam satu rangkaian acara yang
-                                sama.</p>
-                        </div>
-                        <div class="terms-guideline-card">
-                            <div class="terms-guideline-card-icon-wrap">
-                                <svg class="terms-guideline-card-icon" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M45.3794 34.0345L49.9173 29.4966V40.8414C49.9173 42.0449 49.4392 43.1992 48.5882 44.0502C47.7371 44.9012 46.5829 45.3793 45.3794 45.3793H9.0759C7.87236 45.3793 6.71812 44.9012 5.86709 44.0502C5.01607 43.1992 4.53796 42.0449 4.53796 40.8414V13.6138C4.53796 12.4103 5.01607 11.256 5.86709 10.405C6.71812 9.55397 7.87236 9.07587 9.0759 9.07587H38.5725L34.0345 13.6138H9.0759V40.8414H45.3794V34.0345ZM50.9156 14.6121L48.9189 12.6155C48.2808 11.9781 47.4158 11.6201 46.5138 11.6201C45.6119 11.6201 44.7469 11.9781 44.1087 12.6155L27.2276 29.4966V34.0345H13.6138V38.5724H34.0345V36.3035L50.9156 19.4224C51.553 18.7842 51.911 17.9192 51.911 17.0172C51.911 16.1153 51.553 15.2503 50.9156 14.6121Z"
-                                        fill="#5358DD" />
-                                </svg>
-                            </div>
-                            <h2 class="terms-guideline-card-title">Caption & Tag</h2>
-                            <p class="terms-guideline-card-description">Wajib menyertakan caption lengkap serta mencantumkan akun-akun yang perlu ditandai dalam
-                                unggahan.</p>
-                        </div>
-                        <div class="terms-guideline-card">
-                            <div class="terms-guideline-card-icon-wrap">
-                                <svg class="terms-guideline-card-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_8_219)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M6.18812 8.25073H18.0486L21.9162 11.3448H43.3167C43.8637 11.3448 44.3884 11.5621 44.7752 11.9489C45.162 12.3358 45.3794 12.8604 45.3794 13.4075V39.1912C45.3794 39.7382 45.162 40.2629 44.7752 40.6497C44.3884 41.0366 43.8637 41.2539 43.3167 41.2539H6.18812C5.64106 41.2539 5.11641 41.0366 4.72958 40.6497C4.34275 40.2629 4.12543 39.7382 4.12543 39.1912V10.3134C4.12543 9.76637 4.34275 9.24171 4.72958 8.85488C5.11641 8.46805 5.64106 8.25073 6.18812 8.25073ZM7.21947 18.5642V21.6583H42.2853V18.5642H7.21947Z"
-                                            fill="#5358DD" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_8_219">
-                                            <path
-                                                d="M0 0H37.5047C44.1321 0 49.5047 5.37258 49.5047 12V49.5047H12C5.37257 49.5047 0 44.1321 0 37.5047V0Z"
-                                                fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <h2 class="terms-guideline-card-title">Folder File</h2>
-                            <p class="terms-guideline-card-description">Caption dan seluruh file gambar disimpan rapi dalam satu folder Google Drive khusus.</p>
-                        </div>
-                        <div class="terms-guideline-card">
-                            <div class="terms-guideline-card-icon-wrap">
-                                <svg class="terms-guideline-card-icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.4372 13.2838C9.68223 13.2838 8.9582 12.9839 8.42438 12.45C7.89055 11.9162 7.59065 11.1922 7.59065 10.4372C7.59065 9.68229 7.89055 8.95826 8.42438 8.42444C8.9582 7.89061 9.68223 7.59071 10.4372 7.59071C11.1921 7.59071 11.9161 7.89061 12.45 8.42444C12.9838 8.95826 13.2837 9.68229 13.2837 10.4372C13.2837 11.1922 12.9838 11.9162 12.45 12.45C11.9161 12.9839 11.1921 13.2838 10.4372 13.2838ZM40.6293 21.9751L23.5501 4.896C22.867 4.21284 21.9181 3.79535 20.8744 3.79535H7.59065C5.48422 3.79535 3.79529 5.48428 3.79529 7.59071V20.8745C3.79529 21.9182 4.21278 22.867 4.91492 23.5502L21.9751 40.6293C22.6772 41.3125 23.6261 41.749 24.6698 41.749C25.7135 41.749 26.6623 41.3125 27.3455 40.6293L40.6293 27.3456C41.3314 26.6624 41.7489 25.7136 41.7489 24.6698C41.7489 23.6071 41.3124 22.6583 40.6293 21.9751Z"
-                                        fill="#5358DD" />
-                                </svg>
-                            </div>
-                            <h2 class="terms-guideline-card-title">Logo HIMTIKA</h2>
-                            <p class="terms-guideline-card-description">Setiap desain harus mencantumkan logo HIMTIKA pada bagian media partner. 
-                                <br> 
-                                <span>
-                                    <a
-                                        href="assets/files/Logo New Himtika-01.png" 
-                                        download="Logo-HIMTIKA.png"
-                                        target="_blank"
-                                        class="terms-guideline-download-logo-himtika">Unduh Logo HIMTIKA</a>
-                            </span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="terms-note">
-                        <span class="terms-note-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="terms-note-svg" aria-hidden="true">
-                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
-                                <path d="M12 11v5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                                <circle cx="12" cy="8" r="1" fill="currentColor"/>
-                            </svg>
-                        </span>
-    
-                        <p class="terms-note-text ">
-                            <span class="terms-note-label">Catatan:</span>
-                            Ketentuan ini dapat diubah sewaktu-waktu sesuai dengan situasi dan kondisi. Pastikan kamu menghubungi CP yang tertera di awal halaman sebelum mengajukan kerja sama.
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="btn-download-mou-wrapper">
-                    <a
-                        href="assets/files/Template MoU Media Partner HIMTIKA.docx"
-                        download="Template-MoU-HIMTIKA.docx"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download
-                        class="btn-download"
-                    >
-                        <span class="btn-download__text">
-                            Unduh MoU HIMTIKA
-                        </span>
-        
-                        <span class="btn-download__icon">
-                            <svg width="20" height="20" viewBox="0 0 35 30" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0 17.5H3.5V26.25H31.5V17.5H35V26.25C35 28.1925 33.4425 29.75 31.5 29.75H3.5C2.57174 29.75 1.6815 29.3812 1.02513 28.7249C0.368749 28.0685 0 27.1783 0 26.25V17.5ZM17.5 22.75L27.2125 13.195L24.7275 10.7275L19.25 16.1875V0H15.75V16.1875L10.29 10.7275L7.805 13.2125L17.5 22.75Z"
-                                    fill="currentColor"
-                                />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
+                <div class="terms-heading-line-bottom"></div>
+              </h1>
             </div>
-        </section>
-        <!-- End Term Condition Section -->
 
-        <!-- Start Collaborating Section -->
-        <section id="collaborating-section" class="collaborating-section margin-x-section" id="collaborating-section">
-            <img src="./assets/images/collaborating-section/collaborating-pattern.svg" alt="pattern-collaborating-section"
-                class="collaborating-pattern"
+            <div class="terms-container">
+              <div class="term-item">
+                <input
+                  type="checkbox"
+                  name="term-accordion"
+                  id="term-1"
+                  class="accordion-toggle"
+                />
+                <label for="term-1" class="term-header">
+                  <div class="term-title-wrap">
+                    <svg
+                      class="term-icon"
+                      width="55"
+                      height="68"
+                      viewBox="0 0 55 68"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.875 0C5.05164 0 3.30295 0.716426 2.01364 1.99167C0.724328 3.26692 0 4.99653 0 6.8V61.2C0 63.0035 0.724328 64.7331 2.01364 66.0083C3.30295 67.2836 5.05164 68 6.875 68H48.125C49.9484 68 51.697 67.2836 52.9864 66.0083C54.2757 64.7331 55 63.0035 55 61.2V20.4L34.375 0H6.875ZM6.875 6.8H30.9375V23.8H48.125V61.2H6.875V6.8ZM13.75 34V40.8H41.25V34H13.75ZM13.75 47.6V54.4H30.9375V47.6H13.75Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <p class="term-title">
+                      Wajib mengikuti prosedur dan ketentuan media partner yang
+                      telah ditetapkan oleh HIMTIKA.
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
+                </label>
+                <div class="term-content">
+                  <p class="term-detail">-</p>
+                </div>
+              </div>
+              <div class="term-item">
+                <input
+                  type="checkbox"
+                  name="term-accordion"
+                  id="term-2"
+                  class="accordion-toggle"
+                />
+                <label for="term-2" class="term-header">
+                  <div class="term-title-wrap">
+                    <svg
+                      class="term-icon"
+                      width="63"
+                      height="63"
+                      viewBox="0 0 63 63"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.5 0C48.825 0 63 14.175 63 31.5C63 48.825 48.825 63 31.5 63C14.175 63 0 48.825 0 31.5C0 14.175 14.175 0 31.5 0ZM31.5 6.3C25.515 6.3 20.16 8.19 16.065 11.655L51.345 46.935C54.495 42.525 56.7 37.17 56.7 31.5C56.7 17.64 45.36 6.3 31.5 6.3ZM46.935 51.345L11.655 16.065C8.19 20.16 6.3 25.515 6.3 31.5C6.3 45.36 17.64 56.7 31.5 56.7C37.485 56.7 42.84 54.81 46.935 51.345Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <p class="term-title">
+                      Materi promosi tidak boleh mengandung unsur politik,
+                      pornografi, judi, penipuan, atau SARA.
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
+                </label>
+                <div class="term-content">
+                  <p class="term-detail">-</p>
+                </div>
+              </div>
+              <div class="term-item">
+                <input
+                  type="checkbox"
+                  name="term-accordion"
+                  id="term-3"
+                  class="accordion-toggle"
+                />
+                <label for="term-3" class="term-header">
+                  <div class="term-title-wrap">
+                    <svg
+                      class="term-icon"
+                      width="68"
+                      height="68"
+                      viewBox="0 0 68 68"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M40.8 34H45.9V43.588L54.196 48.382L51.646 52.802L40.8 46.546V34ZM6.8 0H54.4C56.2035 0 57.9331 0.716426 59.2083 1.99167C60.4836 3.26692 61.2 4.99653 61.2 6.8V27.54C65.416 31.824 68 37.706 68 44.2C68 50.5122 65.4925 56.5658 61.0291 61.0291C56.5658 65.4925 50.5122 68 44.2 68C37.706 68 31.824 65.416 27.54 61.2H6.8C4.99653 61.2 3.26692 60.4836 1.99167 59.2083C0.716426 57.9331 0 56.2035 0 54.4V6.8C0 4.99653 0.716426 3.26692 1.99167 1.99167C3.26692 0.716426 4.99653 0 6.8 0ZM6.8 44.2V54.4H22.678C21.216 51.306 20.4 47.838 20.4 44.2H6.8ZM6.8 20.4H27.2V10.2H6.8V20.4ZM54.4 20.4V10.2H34V20.4H54.4ZM6.8 37.4H21.386C22.542 33.49 24.684 29.988 27.54 27.2H6.8V37.4ZM44.2 27.71C39.8266 27.71 35.6323 29.4473 32.5398 32.5398C29.4473 35.6323 27.71 39.8266 27.71 44.2C27.71 53.312 35.088 60.69 44.2 60.69C46.3655 60.69 48.5098 60.2635 50.5104 59.4348C52.5111 58.6061 54.329 57.3914 55.8602 55.8602C57.3914 54.329 58.6061 52.5111 59.4348 50.5104C60.2635 48.5098 60.69 46.3655 60.69 44.2C60.69 35.088 53.312 27.71 44.2 27.71Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <p class="term-title">
+                      Pihak pengaju bisa memilih jadwal sendiri atau mengikuti
+                      jadwal HIMTIKA.
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
+                </label>
+                <div class="term-content">
+                  <p class="term-detail">
+                    <b
+                      >Jadwal publikasi berupa feeds minimal 5 hari setelah
+                      submit form</b
+                    >
+                    media partner HIMTIKA.
+                    <br />
+                    Jika publikasi lebih cepat dari H+5 setelah submit form,
+                    <b>publikasi hanya bisa melalui Story Instagram HIMTIKA</b>.
+                  </p>
+                </div>
+              </div>
+              <div class="term-item">
+                <input
+                  type="checkbox"
+                  name="term-accordion"
+                  id="term-4"
+                  class="accordion-toggle"
+                />
+                <label for="term-4" class="term-header">
+                  <div class="term-title-wrap">
+                    <svg
+                      class="term-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M0 0h12v12H0z" fill="none" />
+                      <path
+                        fill="#fff"
+                        d="M4 8a4.03 4.03 0 0 0-3.995 3.41c-.04.31.191.59.504.59h6.982c.313 0 .545-.28.504-.59C7.698 9.45 6 8 4 8m0-6a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m5.5-2a.5.5 0 0 1 .492.41L10 .5V2h1.5a.5.5 0 0 1 .492.41L12 2.5a.5.5 0 0 1-.5.5H10v1.5a.5.5 0 0 1-.992.09L9 4.5V3H7.5a.5.5 0 0 1-.492-.41L7 2.5a.5.5 0 0 1 .5-.5H9V.5a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                    <p class="term-title">
+                      Pihak pengaju wajib mengikuti sosial media HIMTIKA minimal
+                      10 akun
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
+                </label>
+                <div class="term-content">
+                  <ul class="term-list">
+                    <li class="term-list-item">
+                      <a
+                        href="https://www.instagram.com/himtika_unsika"
+                        target="_blank"
+                        class="term-link"
+                      >
+                        <i class="fa-brands fa-instagram term-social-icon"></i>
+                        <span class="term-account">himtika_unsika</span>
+                      </a>
+                      <span class="term-link-note">(click usn to direct)</span>
+                    </li>
+                    <li class="term-list-item">
+                      <a
+                        href="https://www.tiktok.com/@himtika_unsika"
+                        target="_blank"
+                        class="term-link"
+                      >
+                        <i class="fa-brands fa-tiktok term-social-icon"></i>
+                        <span class="term-account">himtika_unsika</span>
+                      </a>
+                      <span class="term-link-note">(click usn to direct)</span>
+                    </li>
+                  </ul>
+                  <p class="term-detail">
+                    <u
+                      ><strong>NOTE:</strong> Pihak pengaju harus tetap
+                      mengikuti sosial media HIMTIKA sesuai ketentuan selama
+                      satu periode.</u
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="term-item">
+                <input
+                  type="checkbox"
+                  name="term-accordion"
+                  id="term-5"
+                  class="accordion-toggle"
+                />
+                <label for="term-5" class="term-header">
+                  <div class="term-title-wrap">
+                    <svg
+                      class="term-icon"
+                      width="63"
+                      height="64"
+                      viewBox="0 0 63 64"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M28.2122 11.8224H38.0757L48.8926 0.972534C49.1983 0.664371 49.5619 0.419775 49.9625 0.252857C50.3632 0.085938 50.7929 0 51.227 0C51.661 0 52.0907 0.085938 52.4914 0.252857C52.892 0.419775 53.2557 0.664371 53.5613 0.972534L62.0439 9.48801C62.6563 10.104 63 10.9373 63 11.8059C63 12.6745 62.6563 13.5078 62.0439 14.1238L54.5148 21.6859H28.2122V28.2615C28.2122 29.1335 27.8658 29.9698 27.2492 30.5864C26.6326 31.2029 25.7963 31.5493 24.9243 31.5493C24.0524 31.5493 23.2161 31.2029 22.5995 30.5864C21.9829 29.9698 21.6365 29.1335 21.6365 28.2615V18.398C21.6365 16.6541 22.3293 14.9815 23.5625 13.7483C24.7957 12.5152 26.4682 11.8224 28.2122 11.8224ZM8.4852 28.2615V41.4128L0.956076 48.9419C0.343715 49.558 0 50.3913 0 51.2599C0 52.1285 0.343715 52.9618 0.956076 53.5778L9.43867 62.0933C9.74432 62.4014 10.108 62.646 10.5086 62.8129C10.9093 62.9799 11.339 63.0658 11.773 63.0658C12.2071 63.0658 12.6368 62.9799 13.0375 62.8129C13.4381 62.646 13.8017 62.4014 14.1074 62.0933L28.2122 47.9885H41.3635C42.2355 47.9885 43.0717 47.6421 43.6883 47.0255C44.3049 46.4089 44.6513 45.5726 44.6513 44.7006V41.4128H47.9391C48.8111 41.4128 49.6474 41.0664 50.264 40.4498C50.8806 39.8332 51.227 38.997 51.227 38.125V34.8372H54.5148C55.3868 34.8372 56.2231 34.4908 56.8396 33.8742C57.4562 33.2576 57.8026 32.4213 57.8026 31.5493V28.2615H34.7878V31.5493C34.7878 33.2933 34.095 34.9659 32.8619 36.199C31.6287 37.4322 29.9561 38.125 28.2122 38.125H21.6365C19.8925 38.125 18.22 37.4322 16.9868 36.199C15.7536 34.9659 15.0609 33.2933 15.0609 31.5493V21.6859L8.4852 28.2615Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <p class="term-title">
+                      Pihak pengaju wajib bersedia menjadi media partner balik
+                      apabila pihak HIMTIKA mengajukan.
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
+                </label>
+                <div class="term-content">
+                  <p class="term-detail">-</p>
+                </div>
+              </div>
+              <div class="term-item">
+                <input
+                  type="checkbox"
+                  name="term-accordion"
+                  id="term-6"
+                  class="accordion-toggle"
+                />
+                <label for="term-6" class="term-header">
+                  <div class="term-title-wrap">
+                    <svg
+                      class="term-icon"
+                      width="69"
+                      height="60"
+                      viewBox="0 0 69 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M34.5 0L0 59.5909H69M34.5 12.5455L58.1168 53.3182H10.8832M31.3636 25.0909V37.6364H37.6364V25.0909M31.3636 43.9091V50.1818H37.6364V43.9091"
+                        fill="white"
+                      />
+                    </svg>
+                    <p class="term-title">
+                      Jika tidak melakukan kewajiban yang tertera pada
+                      ketentuan, pihak pengaju dikenakan sanksi.
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
+                </label>
+                <div class="term-content">
+                  <p class="term-detail">-</p>
+                </div>
+              </div>
+              <div class="hidden 2xl:block"></div>
+              <div class="term-item">
+                <input
+                  type="checkbox"
+                  name="term-accordion"
+                  id="term-7"
+                  class="accordion-toggle"
+                />
+                <label for="term-7" class="term-header">
+                  <div class="term-title-wrap">
+                    <svg
+                      class="term-icon"
+                      width="70"
+                      height="64"
+                      viewBox="0 0 70 64"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M59.1782 34.4943L41.14 52.5326H33.8613V45.254L51.8996 27.2157L59.1782 34.4943ZM69.9379 31.9626C69.9379 32.912 68.9885 33.8614 68.0392 34.8107L60.1276 42.7223L57.2795 39.8741L65.5075 31.6461L63.6087 29.7474L61.3935 31.9626L54.1149 24.684L61.077 18.0383C61.7099 17.4054 62.9758 17.4054 63.9252 18.0383L68.3556 22.4687C68.9885 23.1017 68.9885 24.3675 68.3556 25.3169C67.7227 25.9498 67.0898 26.5827 67.0898 27.2157C67.0898 27.8486 67.7227 28.4815 68.3556 29.1144C69.305 30.0638 70.2544 31.0132 69.9379 31.9626ZM6.32922 56.963V6.32922H28.4815V22.1523H44.3046V26.8992L50.6338 20.57V18.9877L31.6461 0H6.32922C2.84815 0 0 2.84815 0 6.32922V56.963C0 60.4441 2.84815 63.2922 6.32922 63.2922H44.3046C47.7856 63.2922 50.6338 60.4441 50.6338 56.963H6.32922ZM31.6461 47.7856C31.0132 47.7856 30.3803 48.1021 30.0638 48.1021L28.4815 41.14H23.7346L17.0889 46.5198L18.9877 37.9753H14.2408L11.0761 53.7984H15.8231L25.0004 45.5704L26.8992 52.849H30.0638L31.6461 52.5326V47.7856Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <p class="term-title">
+                      Pihak pengaju wajib mengisi dan menandatangani MoU Media
+                      Partner HIMTIKA.
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-circle-arrow-down term-arrow"></i>
+                </label>
+                <div class="term-content">
+                  <p class="term-detail">
+                    <u
+                      ><strong>NOTE:</strong> Sebelum submit form pengajuan
+                      media partner, MoU harus sudah di Tanda Tangani kedua
+                      pihak.</u
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="terms-guidelines">
+            <h1 class="terms-guidelines-title">
+              Ketentuan umum publikasi kerja sama
+            </h1>
+            <div class="terms-guidelines-container">
+              <div class="terms-guideline-card">
+                <div class="terms-guideline-card-icon-wrap">
+                  <svg
+                    class="terms-guideline-card-icon"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.18811 14.4389H18.5643V26.8151H6.18811V14.4389ZM6.18811 6.18811H43.3166V10.3135H6.18811V6.18811ZM43.3166 14.4389V18.5643H22.6897V14.4389H43.3166ZM43.3166 22.6897V26.8151H22.6897V22.6897H43.3166ZM6.18811 30.9405H35.0659V35.0659H6.18811V30.9405ZM6.18811 39.1912H43.3166V43.3166H6.18811V39.1912Z"
+                      fill="#5358DD"
+                    />
+                  </svg>
+                </div>
+                <h2 class="terms-guideline-card-title">Format Konten</h2>
+                <p class="terms-guideline-card-description">
+                  Konten berupa gambar statis, bukan dalam bentuk video, GIF,
+                  atau animasi lainnya.
+                </p>
+              </div>
+              <div class="terms-guideline-card">
+                <div class="terms-guideline-card-icon-wrap">
+                  <svg
+                    class="terms-guideline-card-icon"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_8_202)">
+                      <path
+                        d="M49.5047 12.0571L24.7524 1.74036L0 12.0571L24.7524 22.3738L49.5047 12.0571ZM24.7524 26.4927L10.7421 19.9565L0 24.4332L24.7524 34.7499L49.5047 24.4332L38.7626 19.9565L24.7524 26.4927ZM24.7524 38.8689L11.2546 32.12L0 36.8094L24.7524 47.1261L49.5047 36.8094L38.2501 32.12L24.7524 38.8689Z"
+                        fill="#5358DD"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8_202">
+                        <path
+                          d="M0 0H37.5047C44.1321 0 49.5047 5.37258 49.5047 12V49.5047H12C5.37257 49.5047 0 44.1321 0 37.5047V0Z"
+                          fill="white"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h2 class="terms-guideline-card-title">Rangkaian Pamflet</h2>
+                <p class="terms-guideline-card-description">
+                  Satu unggahan feed boleh memuat beberapa pamflet, selama masih
+                  dalam satu rangkaian acara yang sama.
+                </p>
+              </div>
+              <div class="terms-guideline-card">
+                <div class="terms-guideline-card-icon-wrap">
+                  <svg
+                    class="terms-guideline-card-icon"
+                    width="55"
+                    height="55"
+                    viewBox="0 0 55 55"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M45.3794 34.0345L49.9173 29.4966V40.8414C49.9173 42.0449 49.4392 43.1992 48.5882 44.0502C47.7371 44.9012 46.5829 45.3793 45.3794 45.3793H9.0759C7.87236 45.3793 6.71812 44.9012 5.86709 44.0502C5.01607 43.1992 4.53796 42.0449 4.53796 40.8414V13.6138C4.53796 12.4103 5.01607 11.256 5.86709 10.405C6.71812 9.55397 7.87236 9.07587 9.0759 9.07587H38.5725L34.0345 13.6138H9.0759V40.8414H45.3794V34.0345ZM50.9156 14.6121L48.9189 12.6155C48.2808 11.9781 47.4158 11.6201 46.5138 11.6201C45.6119 11.6201 44.7469 11.9781 44.1087 12.6155L27.2276 29.4966V34.0345H13.6138V38.5724H34.0345V36.3035L50.9156 19.4224C51.553 18.7842 51.911 17.9192 51.911 17.0172C51.911 16.1153 51.553 15.2503 50.9156 14.6121Z"
+                      fill="#5358DD"
+                    />
+                  </svg>
+                </div>
+                <h2 class="terms-guideline-card-title">Caption & Tag</h2>
+                <p class="terms-guideline-card-description">
+                  Wajib menyertakan caption lengkap serta mencantumkan akun-akun
+                  yang perlu ditandai dalam unggahan.
+                </p>
+              </div>
+              <div class="terms-guideline-card">
+                <div class="terms-guideline-card-icon-wrap">
+                  <svg
+                    class="terms-guideline-card-icon"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_8_219)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.18812 8.25073H18.0486L21.9162 11.3448H43.3167C43.8637 11.3448 44.3884 11.5621 44.7752 11.9489C45.162 12.3358 45.3794 12.8604 45.3794 13.4075V39.1912C45.3794 39.7382 45.162 40.2629 44.7752 40.6497C44.3884 41.0366 43.8637 41.2539 43.3167 41.2539H6.18812C5.64106 41.2539 5.11641 41.0366 4.72958 40.6497C4.34275 40.2629 4.12543 39.7382 4.12543 39.1912V10.3134C4.12543 9.76637 4.34275 9.24171 4.72958 8.85488C5.11641 8.46805 5.64106 8.25073 6.18812 8.25073ZM7.21947 18.5642V21.6583H42.2853V18.5642H7.21947Z"
+                        fill="#5358DD"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8_219">
+                        <path
+                          d="M0 0H37.5047C44.1321 0 49.5047 5.37258 49.5047 12V49.5047H12C5.37257 49.5047 0 44.1321 0 37.5047V0Z"
+                          fill="white"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h2 class="terms-guideline-card-title">Folder File</h2>
+                <p class="terms-guideline-card-description">
+                  Caption dan seluruh file gambar disimpan rapi dalam satu
+                  folder Google Drive khusus.
+                </p>
+              </div>
+              <div class="terms-guideline-card">
+                <div class="terms-guideline-card-icon-wrap">
+                  <svg
+                    class="terms-guideline-card-icon"
+                    width="46"
+                    height="46"
+                    viewBox="0 0 46 46"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.4372 13.2838C9.68223 13.2838 8.9582 12.9839 8.42438 12.45C7.89055 11.9162 7.59065 11.1922 7.59065 10.4372C7.59065 9.68229 7.89055 8.95826 8.42438 8.42444C8.9582 7.89061 9.68223 7.59071 10.4372 7.59071C11.1921 7.59071 11.9161 7.89061 12.45 8.42444C12.9838 8.95826 13.2837 9.68229 13.2837 10.4372C13.2837 11.1922 12.9838 11.9162 12.45 12.45C11.9161 12.9839 11.1921 13.2838 10.4372 13.2838ZM40.6293 21.9751L23.5501 4.896C22.867 4.21284 21.9181 3.79535 20.8744 3.79535H7.59065C5.48422 3.79535 3.79529 5.48428 3.79529 7.59071V20.8745C3.79529 21.9182 4.21278 22.867 4.91492 23.5502L21.9751 40.6293C22.6772 41.3125 23.6261 41.749 24.6698 41.749C25.7135 41.749 26.6623 41.3125 27.3455 40.6293L40.6293 27.3456C41.3314 26.6624 41.7489 25.7136 41.7489 24.6698C41.7489 23.6071 41.3124 22.6583 40.6293 21.9751Z"
+                      fill="#5358DD"
+                    />
+                  </svg>
+                </div>
+                <h2 class="terms-guideline-card-title">Logo HIMTIKA</h2>
+                <p class="terms-guideline-card-description">
+                  Setiap desain harus mencantumkan logo HIMTIKA pada bagian
+                  media partner.
+                  <br />
+                  <span>
+                    <a
+                      href="assets/files/Logo New Himtika-01.png"
+                      download="Logo-HIMTIKA.png"
+                      target="_blank"
+                      class="terms-guideline-download-logo-himtika"
+                      >Unduh Logo HIMTIKA</a
+                    >
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="terms-note">
+              <span class="terms-note-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="terms-note-svg"
+                  aria-hidden="true"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="9"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M12 11v5.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="12" cy="8" r="1" fill="currentColor" />
+                </svg>
+              </span>
+
+              <p class="terms-note-text">
+                <span class="terms-note-label">Catatan:</span>
+                Ketentuan ini dapat diubah sewaktu-waktu sesuai dengan situasi
+                dan kondisi. Pastikan kamu menghubungi CP yang tertera di awal
+                halaman sebelum mengajukan kerja sama.
+              </p>
+            </div>
+          </div>
+
+          <div class="btn-download-mou-wrapper">
+            <a
+              href="assets/files/Template MoU Media Partner HIMTIKA.docx"
+              download="Template-MoU-HIMTIKA.docx"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              class="btn-download"
             >
-            <div class="collaborating-content">
-                <div class="collaborating-heading">
-                    <div class="collaborating-heading-line"></div>
-                    <h1 class="collaborating-heading-title">
-                        Let's start 
-                        <span>collaborating!</span>
-                        <div class="collaborating-heading-line-bottom"></div>
-                    </h1>
-                    <p class="collaborating-heading-description">Kerja sama lebih mudah dan terstruktur. Lengkapi form pengajuan berikut, dan kami siap bantu promosikan acaranya!</p>
-                </div>
+              <span class="btn-download__text"> Unduh MoU HIMTIKA </span>
 
-                <div class="collaborating-action">
-                    <a
-                        id="ajukanNow"
-                        class="btn-primary"
-                        href="form-medpart.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span class="btn-shine"></span>
-                        <svg class="collaborating-action-icon" width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.5 22.5L14.0625 18.75L15.5125 17.3L17.5 19.2875L21.9875 14.8L23.4375 16.5625M12.25 22.5H2.5C1.1125 22.5 0 21.3875 0 20V2.5C0 1.1125 1.1125 0 2.5 0H20C21.3875 0 22.5 1.1125 22.5 2.5V12.25C21.7375 11.8125 20.9 11.5 20 11.35V2.5H2.5V20H11.35C11.5 20.9 11.8125 21.7375 12.25 22.5ZM11.25 17.5H5V15H11.25M14.6 12.5H5V10H17.5V11.35C16.4375 11.525 15.4625 11.925 14.6 12.5ZM17.5 7.5H5V5H17.5" fill="white"/>
-                        </svg>
-                        <span class="collaborating-action-text">Ajukan Sekarang</span>
-                    </a>
+              <span class="btn-download__icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 35 30"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 17.5H3.5V26.25H31.5V17.5H35V26.25C35 28.1925 33.4425 29.75 31.5 29.75H3.5C2.57174 29.75 1.6815 29.3812 1.02513 28.7249C0.368749 28.0685 0 27.1783 0 26.25V17.5ZM17.5 22.75L27.2125 13.195L24.7275 10.7275L19.25 16.1875V0H15.75V16.1875L10.29 10.7275L7.805 13.2125L17.5 22.75Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Term Condition Section -->
 
-                    <button id="showTermsBtn" class="btn-primary">
-                        <span class="btn-shine"></span>
-                        <svg class="collaborating-action-icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1 0H7.425L9.4875 1.875H20.9C21.1917 1.875 21.4715 2.0067 21.6778 2.24112C21.8841 2.47554 22 2.79348 22 3.125V18.75C22 19.0815 21.8841 19.3995 21.6778 19.6339C21.4715 19.8683 21.1917 20 20.9 20H1.1C0.808262 20 0.528472 19.8683 0.322183 19.6339C0.115892 19.3995 0 19.0815 0 18.75V1.25C0 0.918479 0.115892 0.600537 0.322183 0.366117C0.528472 0.131696 0.808262 0 1.1 0ZM1.65 6.25V8.125H20.35V6.25H1.65Z" fill="white"/>
-                        </svg>
-                        <span class="collaborating-action-text">Baca Syarat & Ketentuan</span>
-                    </button>
-                </div>
-                
-                <div class="collaborating-process">
-                    <div class="collaborating-process-container">
-                        <!-- MOBILE & TABLET -->
-                        <div class="collaborating-process-mobile">
-                            <ol class="collaborating-process-mobile-list">
-                            <!-- garis vertikal -->
-                            <div class="collaborating-process-mobile-line" aria-hidden="true"></div>
+      <!-- Start Collaborating Section -->
+      <section
+        id="collaborating-section"
+        class="collaborating-section margin-x-section"
+        id="collaborating-section"
+      >
+        <img
+          src="./assets/images/collaborating-section/collaborating-pattern.svg"
+          alt="pattern-collaborating-section"
+          class="collaborating-pattern"
+        />
+        <div class="collaborating-content">
+          <div class="collaborating-heading">
+            <div class="collaborating-heading-line"></div>
+            <h1 class="collaborating-heading-title">
+              Let's start
+              <span>collaborating!</span>
+              <div class="collaborating-heading-line-bottom"></div>
+            </h1>
+            <p class="collaborating-heading-description">
+              Kerja sama lebih mudah dan terstruktur. Lengkapi form pengajuan
+              berikut, dan kami siap bantu promosikan acaranya!
+            </p>
+          </div>
 
-                            <li class="collaborating-process-mobile-item">
-                                <span class="collaborating-process-mobile-step">
-                                1
-                                </span>
-                                <div class="collaborating-process-mobile-content">
-                                    <h3 class="collaborating-process-mobile-title">Isi Formulir Pengajuan</h3>
-                                    <p class="collaborating-process-mobile-description">
-                                        Lengkapi data pengajuan dan unggah file MoU.
-                                    </p>
-                                </div>
-                            </li>
+          <div class="collaborating-action">
+            <a
+              id="ajukanNow"
+              class="btn-primary"
+              href="form-medpart.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="btn-shine"></span>
+              <svg
+                class="collaborating-action-icon"
+                width="24"
+                height="23"
+                viewBox="0 0 24 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5 22.5L14.0625 18.75L15.5125 17.3L17.5 19.2875L21.9875 14.8L23.4375 16.5625M12.25 22.5H2.5C1.1125 22.5 0 21.3875 0 20V2.5C0 1.1125 1.1125 0 2.5 0H20C21.3875 0 22.5 1.1125 22.5 2.5V12.25C21.7375 11.8125 20.9 11.5 20 11.35V2.5H2.5V20H11.35C11.5 20.9 11.8125 21.7375 12.25 22.5ZM11.25 17.5H5V15H11.25M14.6 12.5H5V10H17.5V11.35C16.4375 11.525 15.4625 11.925 14.6 12.5ZM17.5 7.5H5V5H17.5"
+                  fill="white"
+                />
+              </svg>
+              <span class="collaborating-action-text">Ajukan Sekarang</span>
+            </a>
 
-                            <li class="collaborating-process-mobile-item">
-                                <span class="collaborating-process-mobile-step">
-                                2
-                                </span>
-                                <div class="collaborating-process-mobile-content">
-                                    <h3 class="collaborating-process-mobile-title">Verifikasi oleh Tim HIMTIKA</h3>
-                                    <p class="collaborating-process-mobile-description">
-                                        Tim kami akan memeriksa data dan kelengkapan berkas.
-                                    </p>
-                                </div>
-                            </li>
+            <button id="showTermsBtn" class="btn-primary">
+              <span class="btn-shine"></span>
+              <svg
+                class="collaborating-action-icon"
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.1 0H7.425L9.4875 1.875H20.9C21.1917 1.875 21.4715 2.0067 21.6778 2.24112C21.8841 2.47554 22 2.79348 22 3.125V18.75C22 19.0815 21.8841 19.3995 21.6778 19.6339C21.4715 19.8683 21.1917 20 20.9 20H1.1C0.808262 20 0.528472 19.8683 0.322183 19.6339C0.115892 19.3995 0 19.0815 0 18.75V1.25C0 0.918479 0.115892 0.600537 0.322183 0.366117C0.528472 0.131696 0.808262 0 1.1 0ZM1.65 6.25V8.125H20.35V6.25H1.65Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="collaborating-action-text"
+                >Baca Syarat & Ketentuan</span
+              >
+            </button>
+          </div>
 
-                            <li class="collaborating-process-mobile-item">
-                                <span class="collaborating-process-mobile-step">
-                                3
-                                </span>
-                                <div class="collaborating-process-mobile-content">
-                                    <h3 class="collaborating-process-mobile-title">Media Diproses untuk Publikasi</h3>
-                                    <p class="collaborating-process-mobile-description">
-                                        Jadwal publikasi ditentukan sesuai ketentuan yang berlaku.
-                                    </p>
-                                </div>
-                            </li>
+          <div class="collaborating-process">
+            <div class="collaborating-process-container">
+              <!-- MOBILE & TABLET -->
+              <div class="collaborating-process-mobile">
+                <ol class="collaborating-process-mobile-list">
+                  <!-- garis vertikal -->
+                  <div
+                    class="collaborating-process-mobile-line"
+                    aria-hidden="true"
+                  ></div>
 
-                            <li class="collaborating-process-mobile-item">
-                                <span class="collaborating-process-mobile-step">
-                                4
-                                </span>
-                                <div class="collaborating-process-mobile-content">
-                                    <h3 class="collaborating-process-mobile-title">Kerja Sama Berjalan</h3>
-                                    <p class="collaborating-process-mobile-description">
-                                        Media tayang sesuai jadwal dan kerja sama resmi dimulai.
-                                    </p>
-                                </div>
-                            </li>
-                            </ol>
-                        </div>
-
-                        <!-- DESKTOP -->
-                        <div class="collaborating-process-desktop">
-                            <!-- Step 1 -->
-                            <div class="collaborating-process-desktop-item">
-                                <div class="collaborating-process-desktop-progress">
-                                    <div class="collaborating-process-desktop-line collaborating-process-desktop-line-transparent"></div>
-                                    <span class="collaborating-process-desktop-step">
-                                    1
-                                    </span>
-                                    <div class="collaborating-process-desktop-line collaborating-process-desktop-line-active"></div>
-                                </div>
-                                <h3 class="collaborating-process-desktop-title">
-                                    Isi Formulir Pengajuan
-                                </h3>
-                                <p class="collaborating-process-desktop-description">
-                                    Lengkapi data pengajuan dan unggah file MoU.
-                                </p>
-                            </div>
-
-                            <!-- Step 2 -->
-                            <div class="collaborating-process-desktop-item">
-                                <div class="collaborating-process-desktop-progress">
-                                    <div class="collaborating-process-desktop-line collaborating-process-desktop-line-active"></div>
-                                    <span class="collaborating-process-desktop-step">
-                                    2
-                                    </span>
-                                    <div class="collaborating-process-desktop-line collaborating-process-desktop-line-active"></div>
-                                </div>
-                                <h3 class="collaborating-process-desktop-title">
-                                    Verifikasi oleh Tim HIMTIKA
-                                </h3>
-                                <p class="collaborating-process-desktop-description">
-                                    Tim kami akan memeriksa data dan kelengkapan berkas.
-                                </p>
-                            </div>
-
-                            <!-- Step 3 -->
-                            <div class="collaborating-process-desktop-item">
-                                <div class="collaborating-process-desktop-progress">
-                                    <div class="collaborating-process-desktop-line collaborating-process-desktop-line-active"></div>
-                                    <span class="collaborating-process-desktop-step">
-                                    3
-                                    </span>
-                                    <div class="collaborating-process-desktop-line collaborating-process-desktop-line-active"></div>
-                                </div>
-                                <h3 class="collaborating-process-desktop-title">
-                                    Media Diproses untuk Publikasi
-                                </h3>
-                                <p class="collaborating-process-desktop-description">
-                                    Jadwal publikasi ditentukan sesuai ketentuan yang berlaku.
-                                </p>
-                            </div>
-
-                            <!-- Step 4 -->
-                            <div class="collaborating-process-desktop-item">
-                                <div class="collaborating-process-desktop-progress">
-                                    <div class="collaborating-process-desktop-line collaborating-process-desktop-line-active"></div>
-                                    <span class="collaborating-process-desktop-step">
-                                    4
-                                    </span>
-                                    <div class="collaborating-process-desktop-line collaborating-process-desktop-line-transparent"></div>
-                                </div>
-                                <h3 class="collaborating-process-desktop-title">
-                                    Kerja Sama Berjalan
-                                </h3>
-                                <p class="collaborating-process-desktop-description">
-                                    Media tayang sesuai jadwal dan kerja sama resmi dimulai.
-                                </p>
-                            </div>
-
-                        </div>
+                  <li class="collaborating-process-mobile-item">
+                    <span class="collaborating-process-mobile-step"> 1 </span>
+                    <div class="collaborating-process-mobile-content">
+                      <h3 class="collaborating-process-mobile-title">
+                        Isi Formulir Pengajuan
+                      </h3>
+                      <p class="collaborating-process-mobile-description">
+                        Lengkapi data pengajuan dan unggah file MoU.
+                      </p>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Collaborating Section -->
+                  </li>
 
+                  <li class="collaborating-process-mobile-item">
+                    <span class="collaborating-process-mobile-step"> 2 </span>
+                    <div class="collaborating-process-mobile-content">
+                      <h3 class="collaborating-process-mobile-title">
+                        Verifikasi oleh Tim HIMTIKA
+                      </h3>
+                      <p class="collaborating-process-mobile-description">
+                        Tim kami akan memeriksa data dan kelengkapan berkas.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="collaborating-process-mobile-item">
+                    <span class="collaborating-process-mobile-step"> 3 </span>
+                    <div class="collaborating-process-mobile-content">
+                      <h3 class="collaborating-process-mobile-title">
+                        Media Diproses untuk Publikasi
+                      </h3>
+                      <p class="collaborating-process-mobile-description">
+                        Jadwal publikasi ditentukan sesuai ketentuan yang
+                        berlaku.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="collaborating-process-mobile-item">
+                    <span class="collaborating-process-mobile-step"> 4 </span>
+                    <div class="collaborating-process-mobile-content">
+                      <h3 class="collaborating-process-mobile-title">
+                        Kerja Sama Berjalan
+                      </h3>
+                      <p class="collaborating-process-mobile-description">
+                        Media tayang sesuai jadwal dan kerja sama resmi dimulai.
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+
+              <!-- DESKTOP -->
+              <div class="collaborating-process-desktop">
+                <!-- Step 1 -->
+                <div class="collaborating-process-desktop-item">
+                  <div class="collaborating-process-desktop-progress">
+                    <div
+                      class="collaborating-process-desktop-line collaborating-process-desktop-line-transparent"
+                    ></div>
+                    <span class="collaborating-process-desktop-step"> 1 </span>
+                    <div
+                      class="collaborating-process-desktop-line collaborating-process-desktop-line-active"
+                    ></div>
+                  </div>
+                  <h3 class="collaborating-process-desktop-title">
+                    Isi Formulir Pengajuan
+                  </h3>
+                  <p class="collaborating-process-desktop-description">
+                    Lengkapi data pengajuan dan unggah file MoU.
+                  </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="collaborating-process-desktop-item">
+                  <div class="collaborating-process-desktop-progress">
+                    <div
+                      class="collaborating-process-desktop-line collaborating-process-desktop-line-active"
+                    ></div>
+                    <span class="collaborating-process-desktop-step"> 2 </span>
+                    <div
+                      class="collaborating-process-desktop-line collaborating-process-desktop-line-active"
+                    ></div>
+                  </div>
+                  <h3 class="collaborating-process-desktop-title">
+                    Verifikasi oleh Tim HIMTIKA
+                  </h3>
+                  <p class="collaborating-process-desktop-description">
+                    Tim kami akan memeriksa data dan kelengkapan berkas.
+                  </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="collaborating-process-desktop-item">
+                  <div class="collaborating-process-desktop-progress">
+                    <div
+                      class="collaborating-process-desktop-line collaborating-process-desktop-line-active"
+                    ></div>
+                    <span class="collaborating-process-desktop-step"> 3 </span>
+                    <div
+                      class="collaborating-process-desktop-line collaborating-process-desktop-line-active"
+                    ></div>
+                  </div>
+                  <h3 class="collaborating-process-desktop-title">
+                    Media Diproses untuk Publikasi
+                  </h3>
+                  <p class="collaborating-process-desktop-description">
+                    Jadwal publikasi ditentukan sesuai ketentuan yang berlaku.
+                  </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="collaborating-process-desktop-item">
+                  <div class="collaborating-process-desktop-progress">
+                    <div
+                      class="collaborating-process-desktop-line collaborating-process-desktop-line-active"
+                    ></div>
+                    <span class="collaborating-process-desktop-step"> 4 </span>
+                    <div
+                      class="collaborating-process-desktop-line collaborating-process-desktop-line-transparent"
+                    ></div>
+                  </div>
+                  <h3 class="collaborating-process-desktop-title">
+                    Kerja Sama Berjalan
+                  </h3>
+                  <p class="collaborating-process-desktop-description">
+                    Media tayang sesuai jadwal dan kerja sama resmi dimulai.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Collaborating Section -->
     </main>
     <!-- End Main Section -->
 
     <!-- Back To Top Button -->
     <button class="button-back-to-top back-to-top" id="backToTop">
-        <svg class="svg-back-to-top" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#000000">
-            <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path>
-        </svg>
+      <svg
+        class="svg-back-to-top"
+        xmlns="http://www.w3.org/2000/svg"
+        height="25px"
+        viewBox="0 -960 960 960"
+        width="25px"
+        fill="#000000"
+      >
+        <path
+          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+        ></path>
+      </svg>
     </button>
     <!-- Back To Top Button -->
 
     <!-- Back To HIMTIKA Button -->
     <div class="Btn-parent">
-        <a href="https://himtika.cs.unsika.ac.id/">
-            <button class="Btn">
-                <div class="sign">
-                    <img
-                        src="assets/images/logo/HIMTIKA.webp"
-                        width="40"
-                        height="40"
-                        alt="HIMTIKA"
-                    />  
-                </div>            
-                <div class="text-button">
-                    <h1>Back To <span>HIMTIKA</span></h1>
-                </div>
-            </button>
-        </a>
+      <a href="https://himtika.cs.unsika.ac.id/">
+        <button class="Btn">
+          <div class="sign">
+            <img
+              src="assets/images/logo/HIMTIKA.webp"
+              width="40"
+              height="40"
+              alt="HIMTIKA"
+            />
+          </div>
+          <div class="text-button">
+            <h1>Back To <span>HIMTIKA</span></h1>
+          </div>
+        </button>
+      </a>
     </div>
     <!-- Back To HIMTIKA Button -->
 
     <!----Start Footer-->
     <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-main-row">
-                <div class="footer-brand-col">
-                    <div class="brand-content">
-                        <div class="logo-address-group">
-                            <img src="assets/images/logo/medpart-header.svg" alt="Logo Himtika" class="footer-logo" />
-                            <p class="footer-address">Jl. HS.Ronggo Waluyo, Puseurjaya, Telukjambe Timur, Karawang</p>
-                        </div>
-                        <div class="footer-social-wrapper">
-                            <a href="https://www.instagram.com/himtika_unsika" target="_blank" class="footer-social-link">
-                                <svg width="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" /></svg>
-                            </a>
-                            <a href="https://www.linkedin.com/company/himtikaofficial/" target="_blank" class="footer-social-link">
-                                <svg width="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.2235 0H1.772C0.792 0 0 0.7735 0 1.73V22.265C0 23.222 0.792 24 1.772 24H22.2235C23.2035 24 24 23.222 24 22.27V1.73C24 0.773 23.203 0 22.2235 0ZM7.12 20.4515H3.558V8.9955H7.1205L7.12 20.4515ZM5.339 7.435C5.06781 7.43546 4.79918 7.38246 4.54849 7.27903C4.29779 7.17559 4.06995 7.02376 3.87798 6.83221C3.686 6.64065 3.53367 6.41314 3.4297 6.16267C3.32572 5.9122 3.27213 5.64369 3.272 5.3725C3.27213 5.10131 3.32572 4.8328 3.4297 4.58233C3.53367 4.33186 3.686 4.10435 3.87798 3.91279C4.06995 3.72124 4.29779 3.56941 4.54849 3.46597C4.79918 3.36254 5.06781 3.30954 5.339 3.31C5.88601 3.31 6.41061 3.5273 6.79741 3.91409C7.1842 4.30089 7.4015 4.82549 7.4015 5.3725C7.4015 5.91951 7.1842 6.44411 6.79741 6.83091C6.41061 7.2177 5.88601 7.435 5.339 7.435ZM20.4515 20.452H16.894V14.883C16.894 13.5565 16.8705 11.8455 15.042 11.8455C13.1905 11.8455 12.9095 13.2935 12.9095 14.789V20.4515H9.356V8.9955H12.769V10.5605H12.8155C13.289 9.6605 14.4515 8.7095 16.181 8.7095C19.786 8.7095 20.4515 11.0815 20.4515 14.1655V20.452Z" /></svg>
-                            </a>
-                            <a href="https://www.youtube.com/@HimtikaOfficial" target="_blank" class="footer-social-link">
-                                <svg width="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
-                            </a>
-                            <a href="https://www.tiktok.com/@himtika_unsika" target="_blank" class="footer-social-link">
-                                <svg width="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" /></svg>
-                            </a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=himtika@unsika.ac.id" target="_blank" class="footer-social-link">
-                                <svg width="24" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.66626 5.1665H23.3333C24.3403 5.1665 25.1661 5.99247 25.1663 6.99951V20.9995C25.1663 22.0067 24.3404 22.8335 23.3333 22.8335H4.66626C3.65922 22.8333 2.83325 22.0066 2.83325 20.9995V6.99951C2.83342 6.05552 3.55932 5.27085 4.47974 5.17627L4.66626 5.1665ZM23.0686 8.90869L13.9993 14.5767L4.93188 8.90869L4.16626 8.43115V21.4995H23.8333V8.43115L23.0686 8.90869ZM4.40161 7.42432L13.7346 13.2573L14.0002 13.4224L14.2649 13.2573L23.5979 7.42432L25.0764 6.49951H2.9231L4.40161 7.42432Z" fill="currentColor" stroke="currentColor"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-grid-col">
-                    <div class="footer-links-grid">
-                        <div class="link-group tentang-kami">
-                            <div>
-                                <h3 class="group-title">Tentang Kami</h3>
-                                <ul class="group-list">
-                                    <li><a href="https://himtika.cs.unsika.ac.id/struktur-organisasi">Struktur Organisasi</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/sejarah-himtika">Sejarah</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/logo-himtika">Logo</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/galeri-himtika">Galeri</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/grand-design-himtika">Grand Design</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/visi-misi">Visi Misi</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/kontak-kami">Kontak Kami</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="link-group align-right-lg media-hp-footer">
-                            <div>
-                                <h3 class="group-title">Media</h3>
-                                <ul class="group-list">
-                                    <li><a href="https://www.instagram.com/himtika_unsika/" target="_blank">Berita</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/hikode/" target="_blank">Artikel HIMTIKA</a></li>
-                                    <li><a href="https://www.instagram.com/cnc_himtika/" target="_blank">Info Lomba</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="link-group align-center-lg">
-                            <div>
-                                <h3 class="group-title">Event</h3>
-                                <ul class="group-list">
-                                    <li><a href="https://himtika.cs.unsika.ac.id/open-project/" target="_blank">Create and Compete</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/himtika-exchange/" target="_blank">HIMTIKA Exchange</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/hgtc/" target="_blank">HGTC</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/studyclub/" target="_blank">Study Club</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/pekan-it/" target="_blank">Pekan IT: NIC</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/pekan-it/detail-semantik/" target="_blank">Pekan IT: Semantik IC</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/lkmmpd/" target="_blank">LKMM-PD</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/diesnatalis/" target="_blank">Dies Natalis</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/it-bootcamp/" target="_blank">IT Bootcamp</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="link-group align-right-lg aplikasi-publik">
-                            <div>
-                                <h3 class="group-title aplikasi-publik">Aplikasi Publik</h3>
-                                <ul class="group-list">
-                                    <li><a href="https://himtalks.vercel.app/himtalks" target="_blank">Himtalks</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/himtika-awards/" target="_blank">HIMTIKA Award</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/media-partner/" target="_blank">Media Partner</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/corporation/" target="_blank">Corporation</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/kalender/" target="_blank">Kalender</a></li>
-                                    <li><a href="https://himtika.cs.unsika.ac.id/dosen/" target="_blank">Tenaga Pendidik</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="footer-main-row">
+          <div class="footer-brand-col">
+            <div class="brand-content">
+              <div class="logo-address-group">
+                <img
+                  src="assets/images/logo/medpart-header.svg"
+                  alt="Logo Himtika"
+                  class="footer-logo"
+                />
+                <p class="footer-address">
+                  Jl. HS.Ronggo Waluyo, Puseurjaya, Telukjambe Timur, Karawang
+                </p>
+              </div>
+              <div class="footer-social-wrapper">
+                <a
+                  href="https://www.instagram.com/himtika_unsika"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="22"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/himtikaofficial/"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.2235 0H1.772C0.792 0 0 0.7735 0 1.73V22.265C0 23.222 0.792 24 1.772 24H22.2235C23.2035 24 24 23.222 24 22.27V1.73C24 0.773 23.203 0 22.2235 0ZM7.12 20.4515H3.558V8.9955H7.1205L7.12 20.4515ZM5.339 7.435C5.06781 7.43546 4.79918 7.38246 4.54849 7.27903C4.29779 7.17559 4.06995 7.02376 3.87798 6.83221C3.686 6.64065 3.53367 6.41314 3.4297 6.16267C3.32572 5.9122 3.27213 5.64369 3.272 5.3725C3.27213 5.10131 3.32572 4.8328 3.4297 4.58233C3.53367 4.33186 3.686 4.10435 3.87798 3.91279C4.06995 3.72124 4.29779 3.56941 4.54849 3.46597C4.79918 3.36254 5.06781 3.30954 5.339 3.31C5.88601 3.31 6.41061 3.5273 6.79741 3.91409C7.1842 4.30089 7.4015 4.82549 7.4015 5.3725C7.4015 5.91951 7.1842 6.44411 6.79741 6.83091C6.41061 7.2177 5.88601 7.435 5.339 7.435ZM20.4515 20.452H16.894V14.883C16.894 13.5565 16.8705 11.8455 15.042 11.8455C13.1905 11.8455 12.9095 13.2935 12.9095 14.789V20.4515H9.356V8.9955H12.769V10.5605H12.8155C13.289 9.6605 14.4515 8.7095 16.181 8.7095C19.786 8.7095 20.4515 11.0815 20.4515 14.1655V20.452Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.youtube.com/@HimtikaOfficial"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@himtika_unsika"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=himtika@unsika.ac.id"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="24"
+                    viewBox="0 0 28 28"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.66626 5.1665H23.3333C24.3403 5.1665 25.1661 5.99247 25.1663 6.99951V20.9995C25.1663 22.0067 24.3404 22.8335 23.3333 22.8335H4.66626C3.65922 22.8333 2.83325 22.0066 2.83325 20.9995V6.99951C2.83342 6.05552 3.55932 5.27085 4.47974 5.17627L4.66626 5.1665ZM23.0686 8.90869L13.9993 14.5767L4.93188 8.90869L4.16626 8.43115V21.4995H23.8333V8.43115L23.0686 8.90869ZM4.40161 7.42432L13.7346 13.2573L14.0002 13.4224L14.2649 13.2573L23.5979 7.42432L25.0764 6.49951H2.9231L4.40161 7.42432Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
+          </div>
 
-            <div class="footer-bottom">
-                <p class="copyright-text">Licensed, Registered, and Authorized by</p>
-                <div class="authorized-brand">
-                    <img src="assets/images/logo/HIMTIKA.webp" alt="HIMTIKA" class="mini-logo" />
-                    <span>HIMTIKA 2026</span>
+          <div class="footer-grid-col">
+            <div class="footer-links-grid">
+              <div class="link-group tentang-kami">
+                <div>
+                  <h3 class="group-title">Tentang Kami</h3>
+                  <ul class="group-list">
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/struktur-organisasi"
+                        >Struktur Organisasi</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/sejarah-himtika"
+                        >Sejarah</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/logo-himtika"
+                        >Logo</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/galeri-himtika"
+                        >Galeri</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/grand-design-himtika"
+                        >Grand Design</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/visi-misi"
+                        >Visi Misi</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/kontak-kami"
+                        >Kontak Kami</a
+                      >
+                    </li>
+                  </ul>
                 </div>
+              </div>
+
+              <div class="link-group align-right-lg media-hp-footer">
+                <div>
+                  <h3 class="group-title">Media</h3>
+                  <ul class="group-list">
+                    <li>
+                      <a
+                        href="https://www.instagram.com/himtika_unsika/"
+                        target="_blank"
+                        >Berita</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/hikode/"
+                        target="_blank"
+                        >Artikel HIMTIKA</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/cnc_himtika/"
+                        target="_blank"
+                        >Info Lomba</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="link-group align-center-lg">
+                <div>
+                  <h3 class="group-title">Event</h3>
+                  <ul class="group-list">
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/cnc/"
+                        target="_blank"
+                        >Create and Compete</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/himtika-exchange/"
+                        target="_blank"
+                        >HIMTIKA Exchange</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/hgtc/"
+                        target="_blank"
+                        >HGTC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/studyclub/"
+                        target="_blank"
+                        >Study Club</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/pekan-it/"
+                        target="_blank"
+                        >Pekan IT: NIC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/pekan-it/detail-semantik/"
+                        target="_blank"
+                        >Pekan IT: Semantik IC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/lkmmpd/"
+                        target="_blank"
+                        >LKMM-PD</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/diesnatalis/"
+                        target="_blank"
+                        >Dies Natalis</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/it-bootcamp/"
+                        target="_blank"
+                        >IT Bootcamp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="link-group align-right-lg aplikasi-publik">
+                <div>
+                  <h3 class="group-title aplikasi-publik">Aplikasi Publik</h3>
+                  <ul class="group-list">
+                    <li>
+                      <a
+                        href="https://himtalks.vercel.app/himtalks"
+                        target="_blank"
+                        >Himtalks</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/himtika-awards/"
+                        target="_blank"
+                        >HIMTIKA Award</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/media-partner/"
+                        target="_blank"
+                        >Media Partner</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/corporation/"
+                        target="_blank"
+                        >Corporation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/kalender/"
+                        target="_blank"
+                        >Kalender</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/dosen/"
+                        target="_blank"
+                        >Tenaga Pendidik</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p class="copyright-text">Licensed, Registered, and Authorized by</p>
+          <div class="authorized-brand">
+            <img
+              src="assets/images/logo/HIMTIKA.webp"
+              alt="HIMTIKA"
+              class="mini-logo"
+            />
+            <span>HIMTIKA 2026</span>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Footer End -->
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,389 +1,991 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Form Pengajuan Medpart ー HIMTIKA ー Himpunan Mahasiswa Informatika UNSIKA</title>
-  <meta name="description" content="Fasilitas untuk mempermudah proses pengajuan media partner secara langsung melalui website resmi HIMTIKA." />
-  <meta name="keywords" content="HIMTIKA, Himpunan Mahasiswa Informatika, UNSIKA, Media Partner, Informatika" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Form Pengajuan Medpart ー HIMTIKA ー Himpunan Mahasiswa Informatika UNSIKA
+    </title>
+    <meta
+      name="description"
+      content="Fasilitas untuk mempermudah proses pengajuan media partner secara langsung melalui website resmi HIMTIKA."
+    />
+    <meta
+      name="keywords"
+      content="HIMTIKA, Himpunan Mahasiswa Informatika, UNSIKA, Media Partner, Informatika"
+    />
 
-  <!-- Icon -->
-  <link rel="icon" href="assets/images/logo/HIMTIKA.webp" type="image/x-icon"/>
+    <!-- Icon -->
+    <link
+      rel="icon"
+      href="assets/images/logo/HIMTIKA.webp"
+      type="image/x-icon"
+    />
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-  <!-- font -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- font -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <!-- Responsive -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-</head>
-<body>
-  <!-- PRELOADER -->
-  <div class="preloader">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+  </head>
+  <body>
+    <!-- PRELOADER -->
+    <div class="preloader">
       <div class="icon"></div>
       <div class="other-icon"></div>
-  </div>
+    </div>
 
-  <!-- START NAVBAR -->
-  <nav id="navbar" class="margin-x-section w-full absolute top-0 left-0 py-3 2xl:py-3.5 text-white transition-all duration-500 z-1">
-      <div class="flex justify-between items-center selection:bg-white selection:text-[#373A8C] section-container">
-          <a href="https://himtika.cs.unsika.ac.id/media-partner/" class="lg:w-44 xl:w-46 -translate-x-1 transition-all duration-500 glow-shadow">
-              <img src="assets/images/logo/medpart-header.svg" alt="navbar-image" class="w-full h-full" />
-          </a>
-          <div 
-              class="rounded-2xl max-w-full transition-all duration-500 ease-in-out" >
-              <ul class="flex items-center font-medium text-center uppercase">
-                  <li>
-                      <a href="https://himtika.cs.unsika.ac.id/media-partner/" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
-                          <span class="inline-block px-5 py-1 lg:py-2 text-sm lg:text-sm xl:text-[15px] text-white tracking-wide rounded-full font-semibold bg-[#5358DD] group-hover:text-[#252642] group-hover:font-semibold group-hover:bg-white transition duration-300">
-                          Kembali
-                          </span>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>   
-  <!-- END NAVBAR -->
-
-  <!-- START MAIN SECTION -->
-  <main class="main-section">
-    <section id="form-pengajuan" class="form-pengajuan-section margin-x-section">
-      <img src="./assets/images/hero-section/hero-pattern.svg" alt="pattern-hero-section"
-        class="hero-pattern-2"
+    <!-- START NAVBAR -->
+    <nav
+      id="navbar"
+      class="margin-x-section w-full absolute top-0 left-0 py-3 2xl:py-3.5 text-white transition-all duration-500 z-1"
+    >
+      <div
+        class="flex justify-between items-center selection:bg-white selection:text-[#373A8C] section-container"
       >
-      <div class="form-container">
-        <div>
-          <div class="line-shimmer"></div>
-          <h1 class="form-title">Form Pengajuan <span>Media Partner</span>
-          </h1>
+        <a
+          href="https://himtika.cs.unsika.ac.id/media-partner/"
+          class="lg:w-44 xl:w-46 -translate-x-1 transition-all duration-500 glow-shadow"
+        >
+          <img
+            src="assets/images/logo/medpart-header.svg"
+            alt="navbar-image"
+            class="w-full h-full"
+          />
+        </a>
+        <div
+          class="rounded-2xl max-w-full transition-all duration-500 ease-in-out"
+        >
+          <ul class="flex items-center font-medium text-center uppercase">
+            <li>
+              <a
+                href="https://himtika.cs.unsika.ac.id/media-partner/"
+                class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300"
+              >
+                <span
+                  class="inline-block px-5 py-1 lg:py-2 text-sm lg:text-sm xl:text-[15px] text-white tracking-wide rounded-full font-semibold bg-[#5358DD] group-hover:text-[#252642] group-hover:font-semibold group-hover:bg-white transition duration-300"
+                >
+                  Kembali
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-  
-        <form class="form-element-wrapper" novalidate>
-          <!-- Honeypot: field tersembunyi via CSS, manusia tidak akan mengisi ini -->
-          <div class="form-honeypot" aria-hidden="true">
-            <label for="website_hp">Jangan isi field ini</label>
-            <input type="text" id="website_hp" name="website_hp" tabindex="-1" autocomplete="off">
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START MAIN SECTION -->
+    <main class="main-section">
+      <section
+        id="form-pengajuan"
+        class="form-pengajuan-section margin-x-section"
+      >
+        <img
+          src="./assets/images/hero-section/hero-pattern.svg"
+          alt="pattern-hero-section"
+          class="hero-pattern-2"
+        />
+        <div class="form-container">
+          <div>
+            <div class="line-shimmer"></div>
+            <h1 class="form-title">
+              Form Pengajuan <span>Media Partner</span>
+            </h1>
           </div>
 
-          <!-- Timestamp saat form dimuat, dipakai server untuk cek "minimum time-on-page" -->
-          <input type="hidden" id="form_loaded_at" value="">
+          <form class="form-element-wrapper" novalidate>
+            <!-- Honeypot: field tersembunyi via CSS, manusia tidak akan mengisi ini -->
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="website_hp">Jangan isi field ini</label>
+              <input
+                type="text"
+                id="website_hp"
+                name="website_hp"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
 
-          <!-- Nama Instansi -->
-          <div class="input-icon-group form-field-group">
-            <label for="instansi" class="icon-box form-field-label-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="form-field-icon"><path d="M4 21V6a1 1 0 011-1h6a1 1 0 011 1v15M14 21v-9a1 1 0 011-1h4a1 1 0 011 1v9M4 21h16M8 8h.01M8 12h.01M8 16h.01" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </label>
-            <input id="instansi" type="text" placeholder="Masukkan nama instansi" class="form-field-input" required>
-          </div>
-  
-          <!-- Email & Telepon -->
-          <div class="form-grid-row">
+            <!-- Timestamp saat form dimuat, dipakai server untuk cek "minimum time-on-page" -->
+            <input type="hidden" id="form_loaded_at" value="" />
+
+            <!-- Nama Instansi -->
             <div class="input-icon-group form-field-group">
-              <label for="email" class="icon-box form-field-label-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="form-field-icon"><path d="M3 6.5A1.5 1.5 0 014.5 5h15A1.5 1.5 0 0121 6.5v11a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 013 17.5v-11z" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <label for="instansi" class="icon-box form-field-label-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="form-field-icon"
+                >
+                  <path
+                    d="M4 21V6a1 1 0 011-1h6a1 1 0 011 1v15M14 21v-9a1 1 0 011-1h4a1 1 0 011 1v9M4 21h16M8 8h.01M8 12h.01M8 16h.01"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </label>
-              <input id="email" type="email" placeholder="Masukan alamat email anda" class="form-field-input" required>
+              <input
+                id="instansi"
+                type="text"
+                placeholder="Masukkan nama instansi"
+                class="form-field-input"
+                required
+              />
             </div>
-  
+
+            <!-- Email & Telepon -->
+            <div class="form-grid-row">
+              <div class="input-icon-group form-field-group">
+                <label for="email" class="icon-box form-field-label-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="form-field-icon"
+                  >
+                    <path
+                      d="M3 6.5A1.5 1.5 0 014.5 5h15A1.5 1.5 0 0121 6.5v11a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 013 17.5v-11z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M3.5 6.5l8.5 6 8.5-6"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Masukan alamat email anda"
+                  class="form-field-input"
+                  required
+                />
+              </div>
+
+              <div class="input-icon-group form-field-group">
+                <label for="telepon" class="icon-box form-field-label-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="form-field-icon"
+                  >
+                    <path
+                      d="M4 4h4l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v4a2 2 0 01-2 2C9.5 21 3 14.5 3 6a2 2 0 011-2z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  id="telepon"
+                  type="tel"
+                  placeholder="Masukkan nomor telepon anda"
+                  class="form-field-input"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Alamat Instansi -->
             <div class="input-icon-group form-field-group">
-              <label for="telepon" class="icon-box form-field-label-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="form-field-icon"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v4a2 2 0 01-2 2C9.5 21 3 14.5 3 6a2 2 0 011-2z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <label for="alamat" class="icon-box form-field-label-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="form-field-icon"
+                >
+                  <path
+                    d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="12"
+                    cy="10"
+                    r="2.3"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                  />
+                </svg>
               </label>
-              <input id="telepon" type="tel" placeholder="Masukkan nomor telepon anda" class="form-field-input" required>
+              <input
+                id="alamat"
+                type="text"
+                placeholder="Masukan alamat asal instansi"
+                class="form-field-input"
+                required
+              />
             </div>
-          </div>
-  
-          <!-- Alamat Instansi -->
-          <div class="input-icon-group form-field-group">
-            <label for="alamat" class="icon-box form-field-label-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="form-field-icon"><path d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.3" stroke="currentColor" stroke-width="1.7"/></svg>
-            </label>
-            <input id="alamat" type="text" placeholder="Masukan alamat asal instansi" class="form-field-input" required>
-          </div>
-  
-          <!-- Link Drive -->
-          <div class="input-icon-group form-field-group">
-            <label for="linkdrive" class="icon-box form-field-label-icon">
-              <svg class="form-field-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor"><path d="M451.5 160C434.9 160 418.8 164.5 404.7 172.7C388.9 156.7 370.5 143.3 350.2 133.2C378.4 109.2 414.3 96 451.5 96C537.9 96 608 166 608 252.5C608 294 591.5 333.8 562.2 363.1L491.1 434.2C461.8 463.5 422 480 380.5 480C294.1 480 224 410 224 323.5C224 322 224 320.5 224.1 319C224.6 301.3 239.3 287.4 257 287.9C274.7 288.4 288.6 303.1 288.1 320.8C288.1 321.7 288.1 322.6 288.1 323.4C288.1 374.5 329.5 415.9 380.6 415.9C405.1 415.9 428.6 406.2 446 388.8L517.1 317.7C534.4 300.4 544.2 276.8 544.2 252.3C544.2 201.2 502.8 159.8 451.7 159.8zM307.2 237.3C305.3 236.5 303.4 235.4 301.7 234.2C289.1 227.7 274.7 224 259.6 224C235.1 224 211.6 233.7 194.2 251.1L123.1 322.2C105.8 339.5 96 363.1 96 387.6C96 438.7 137.4 480.1 188.5 480.1C205 480.1 221.1 475.7 235.2 467.5C251 483.5 269.4 496.9 289.8 507C261.6 530.9 225.8 544.2 188.5 544.2C102.1 544.2 32 474.2 32 387.7C32 346.2 48.5 306.4 77.8 277.1L148.9 206C178.2 176.7 218 160.2 259.5 160.2C346.1 160.2 416 230.8 416 317.1C416 318.4 416 319.7 416 321C415.6 338.7 400.9 352.6 383.2 352.2C365.5 351.8 351.6 337.1 352 319.4C352 318.6 352 317.9 352 317.1C352 283.4 334 253.8 307.2 237.5z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </label>
-            <input id="linkdrive" type="url" placeholder="Masukan link google drive bahan yang akan di publish" class="form-field-input" required>
-          </div>
-  
-          <!-- ===== Upload Bukti TikTok ===== -->
-          <div class="pt-4">
-            <p class="text-sm sm:text-base font-semibold text-white">
-              Upload bukti sudah mengikuti TikTok HIMTIKA dengan minimal 10 akun
-              <span class="text-pink-400">*</span>
-            </p>
-  
-            <div id="uploadAreaTiktok" class="upload-area mt-3 rounded-xl border-2 border-dashed border-indigo-300/40 backdrop-blur-xs bg-white/5 hover:bg-white/10 transition-colors duration-300 px-4 py-8 text-center cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-8 w-8 mx-auto text-indigo-200"><path d="M12 16V4m0 0L7 9m5-5l5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <p class="mt-2 text-sm text-indigo-100">Seret hingga 10 gambar bukti follow TikTok ke sini</p>
-              <p class="text-xs text-indigo-300 mt-1">— OR —</p>
-              <button type="button" data-browse="tiktok" class="browse-btn mt-2 inline-flex items-center rounded-full bg-indigo-600 hover:bg-indigo-500 px-5 py-2 text-sm font-medium text-white transition-colors">Browse files</button>
-              <p class="text-[11px] text-indigo-300/70 mt-2">Maks 3MB per gambar &middot; format JPG/PNG</p>
+
+            <!-- Link Drive -->
+            <div class="input-icon-group form-field-group">
+              <label for="linkdrive" class="icon-box form-field-label-icon">
+                <svg
+                  class="form-field-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M451.5 160C434.9 160 418.8 164.5 404.7 172.7C388.9 156.7 370.5 143.3 350.2 133.2C378.4 109.2 414.3 96 451.5 96C537.9 96 608 166 608 252.5C608 294 591.5 333.8 562.2 363.1L491.1 434.2C461.8 463.5 422 480 380.5 480C294.1 480 224 410 224 323.5C224 322 224 320.5 224.1 319C224.6 301.3 239.3 287.4 257 287.9C274.7 288.4 288.6 303.1 288.1 320.8C288.1 321.7 288.1 322.6 288.1 323.4C288.1 374.5 329.5 415.9 380.6 415.9C405.1 415.9 428.6 406.2 446 388.8L517.1 317.7C534.4 300.4 544.2 276.8 544.2 252.3C544.2 201.2 502.8 159.8 451.7 159.8zM307.2 237.3C305.3 236.5 303.4 235.4 301.7 234.2C289.1 227.7 274.7 224 259.6 224C235.1 224 211.6 233.7 194.2 251.1L123.1 322.2C105.8 339.5 96 363.1 96 387.6C96 438.7 137.4 480.1 188.5 480.1C205 480.1 221.1 475.7 235.2 467.5C251 483.5 269.4 496.9 289.8 507C261.6 530.9 225.8 544.2 188.5 544.2C102.1 544.2 32 474.2 32 387.7C32 346.2 48.5 306.4 77.8 277.1L148.9 206C178.2 176.7 218 160.2 259.5 160.2C346.1 160.2 416 230.8 416 317.1C416 318.4 416 319.7 416 321C415.6 338.7 400.9 352.6 383.2 352.2C365.5 351.8 351.6 337.1 352 319.4C352 318.6 352 317.9 352 317.1C352 283.4 334 253.8 307.2 237.5z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </label>
+              <input
+                id="linkdrive"
+                type="url"
+                placeholder="Masukan link google drive bahan yang akan di publish"
+                class="form-field-input"
+                required
+              />
             </div>
-  
-            <p id="counterTiktok" class="mt-2 text-sm font-medium text-pink-400">Upload 10 gambar lagi (0/10)</p>
-            <div id="previewGridTiktok" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 mt-3"></div>
-          </div>
-  
-          <!-- ===== Upload Bukti Instagram ===== -->
-          <div class="pt-2">
-            <p class="text-sm sm:text-base font-semibold text-white">
-              Upload bukti sudah mengikuti Instagram HIMTIKA dengan minimal 10 akun
-              <span class="text-pink-400">*</span>
-            </p>
-  
-            <div id="uploadAreaInstagram" class="upload-area mt-3 rounded-xl border-2 border-dashed border-indigo-300/40 backdrop-blur-xs bg-white/5 hover:bg-white/10 transition-colors duration-300 px-4 py-8 text-center cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-8 w-8 mx-auto text-indigo-200"><path d="M12 16V4m0 0L7 9m5-5l5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <p class="mt-2 text-sm text-indigo-100">Seret hingga 10 gambar bukti follow Instagram ke sini</p>
-              <p class="text-xs text-indigo-300 mt-1">— OR —</p>
-              <button type="button" data-browse="instagram" class="browse-btn mt-2 inline-flex items-center rounded-full bg-indigo-600 hover:bg-indigo-500 px-5 py-2 text-sm font-medium text-white transition-colors">Browse files</button>
-              <p class="text-[11px] text-indigo-300/70 mt-2">Maks 3MB per gambar &middot; format JPG/PNG</p>
+
+            <!-- ===== Upload Bukti TikTok ===== -->
+            <div class="pt-4">
+              <p class="text-sm sm:text-base font-semibold text-white">
+                Upload bukti sudah mengikuti TikTok HIMTIKA dengan minimal 10
+                akun
+                <span class="text-pink-400">*</span>
+              </p>
+
+              <div
+                id="uploadAreaTiktok"
+                class="upload-area mt-3 rounded-xl border-2 border-dashed border-indigo-300/40 backdrop-blur-xs bg-white/5 hover:bg-white/10 transition-colors duration-300 px-4 py-8 text-center cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-8 w-8 mx-auto text-indigo-200"
+                >
+                  <path
+                    d="M12 16V4m0 0L7 9m5-5l5 5"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="mt-2 text-sm text-indigo-100">
+                  Seret hingga 10 gambar bukti follow TikTok ke sini
+                </p>
+                <p class="text-xs text-indigo-300 mt-1">— OR —</p>
+                <button
+                  type="button"
+                  data-browse="tiktok"
+                  class="browse-btn mt-2 inline-flex items-center rounded-full bg-indigo-600 hover:bg-indigo-500 px-5 py-2 text-sm font-medium text-white transition-colors"
+                >
+                  Browse files
+                </button>
+                <p class="text-[11px] text-indigo-300/70 mt-2">
+                  Maks 3MB per gambar &middot; format JPG/PNG
+                </p>
+              </div>
+
+              <p
+                id="counterTiktok"
+                class="mt-2 text-sm font-medium text-pink-400"
+              >
+                Upload 10 gambar lagi (0/10)
+              </p>
+              <div
+                id="previewGridTiktok"
+                class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 mt-3"
+              ></div>
             </div>
-  
-            <p id="counterInstagram" class="mt-2 text-sm font-medium text-pink-400">Upload 10 gambar lagi (0/10)</p>
-            <div id="previewGridInstagram" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 mt-3"></div>
-          </div>
-  
-          <!-- ===== Upload MoU ===== -->
-          <div class="pt-2">
-            <p class="text-sm sm:text-base font-semibold text-white">
-              Upload MoU <span class="text-pink-400">*</span>
-            </p>
-  
-            <div id="uploadAreaMou" class="upload-area mt-3 rounded-xl border-2 border-dashed border-indigo-300/40 backdrop-blur-xs bg-white/5 hover:bg-white/10 transition-colors duration-300 px-4 py-8 text-center cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-8 w-8 mx-auto text-indigo-200"><path d="M4 4h10l6 6v10a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4v6h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <p class="mt-2 text-sm text-indigo-100">Seret dokumen MoU Anda ke sini untuk mulai mengunggah</p>
-              <p class="text-xs text-indigo-300 mt-1">— OR —</p>
-              <button type="button" data-browse="mou" class="browse-btn mt-2 inline-flex items-center rounded-full bg-indigo-600 hover:bg-indigo-500 px-5 py-2 text-sm font-medium text-white transition-colors">Browse files</button>
-              <p class="text-[11px] text-indigo-300/70 mt-2">Maks 10MB &middot; PDF/DOC/DOCX/JPG/PNG</p>
+
+            <!-- ===== Upload Bukti Instagram ===== -->
+            <div class="pt-2">
+              <p class="text-sm sm:text-base font-semibold text-white">
+                Upload bukti sudah mengikuti Instagram HIMTIKA dengan minimal 10
+                akun
+                <span class="text-pink-400">*</span>
+              </p>
+
+              <div
+                id="uploadAreaInstagram"
+                class="upload-area mt-3 rounded-xl border-2 border-dashed border-indigo-300/40 backdrop-blur-xs bg-white/5 hover:bg-white/10 transition-colors duration-300 px-4 py-8 text-center cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-8 w-8 mx-auto text-indigo-200"
+                >
+                  <path
+                    d="M12 16V4m0 0L7 9m5-5l5 5"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="mt-2 text-sm text-indigo-100">
+                  Seret hingga 10 gambar bukti follow Instagram ke sini
+                </p>
+                <p class="text-xs text-indigo-300 mt-1">— OR —</p>
+                <button
+                  type="button"
+                  data-browse="instagram"
+                  class="browse-btn mt-2 inline-flex items-center rounded-full bg-indigo-600 hover:bg-indigo-500 px-5 py-2 text-sm font-medium text-white transition-colors"
+                >
+                  Browse files
+                </button>
+                <p class="text-[11px] text-indigo-300/70 mt-2">
+                  Maks 3MB per gambar &middot; format JPG/PNG
+                </p>
+              </div>
+
+              <p
+                id="counterInstagram"
+                class="mt-2 text-sm font-medium text-pink-400"
+              >
+                Upload 10 gambar lagi (0/10)
+              </p>
+              <div
+                id="previewGridInstagram"
+                class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 mt-3"
+              ></div>
             </div>
-  
-            <div id="previewMou" class="mt-3"></div>
-          </div>
-  
-          <!-- Submit -->
-          <div class="pt-4 flex justify-center">
-            <button id="submitBtn" type="submit" disabled
-              class="submit-btn inline-flex items-center gap-2 rounded-full bg-indigo-600 disabled:bg-indigo-800 disabled:text-indigo-300/50 disabled:cursor-not-allowed px-8 py-3 text-sm sm:text-base font-semibold text-white hover:enabled:bg-indigo-500 transition-colors">
-              Kirim Sekarang
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-  
-    <!-- Overlay Modal: Sukses -->
-    <div id="successPopup" class="popup fixed inset-0 z-[9999] hidden  items-center justify-center bg-black/60 p-4">
-      <div class="w-full max-w-md rounded-4xl md:rounded-[50px] bg-white px-6 py-8 text-center shadow-2xl">
-        <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#4FF900]">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-11 w-11 text-white"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            <!-- ===== Upload MoU ===== -->
+            <div class="pt-2">
+              <p class="text-sm sm:text-base font-semibold text-white">
+                Upload MoU <span class="text-pink-400">*</span>
+              </p>
+
+              <div
+                id="uploadAreaMou"
+                class="upload-area mt-3 rounded-xl border-2 border-dashed border-indigo-300/40 backdrop-blur-xs bg-white/5 hover:bg-white/10 transition-colors duration-300 px-4 py-8 text-center cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-8 w-8 mx-auto text-indigo-200"
+                >
+                  <path
+                    d="M4 4h10l6 6v10a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14 4v6h6"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="mt-2 text-sm text-indigo-100">
+                  Seret dokumen MoU Anda ke sini untuk mulai mengunggah
+                </p>
+                <p class="text-xs text-indigo-300 mt-1">— OR —</p>
+                <button
+                  type="button"
+                  data-browse="mou"
+                  class="browse-btn mt-2 inline-flex items-center rounded-full bg-indigo-600 hover:bg-indigo-500 px-5 py-2 text-sm font-medium text-white transition-colors"
+                >
+                  Browse files
+                </button>
+                <p class="text-[11px] text-indigo-300/70 mt-2">
+                  Maks 10MB &middot; PDF/DOC/DOCX/JPG/PNG
+                </p>
+              </div>
+
+              <div id="previewMou" class="mt-3"></div>
+            </div>
+
+            <!-- Submit -->
+            <div class="pt-4 flex justify-center">
+              <button
+                id="submitBtn"
+                type="submit"
+                disabled
+                class="submit-btn inline-flex items-center gap-2 rounded-full bg-indigo-600 disabled:bg-indigo-800 disabled:text-indigo-300/50 disabled:cursor-not-allowed px-8 py-3 text-sm sm:text-base font-semibold text-white hover:enabled:bg-indigo-500 transition-colors"
+              >
+                Kirim Sekarang
+              </button>
+            </div>
+          </form>
         </div>
-        <h3 class="mt-5 text-xl md:text-3xl font-semibold text-slate-800 tracking-tight">Pengajuan Terkirim!</h3>
-        <p class="mt-3.5 text-sm leading-tight text-slate-500">
-          Formulir pengajuan Media Partner kamu sudah berhasil dikirim. Tim kami akan segera melakukan verifikasi.
-        </p>
-        <button type="button" id="successPopupClose"
-          class="mt-8 rounded-xl bg-slate-200 hover:bg-slate-300 px-8 py-2 text-sm font-medium text-slate-700 transition-colors cursor-pointer">
-          Kembali
-        </button>
-      </div>
-    </div>
+      </section>
 
-    <!-- Overlay Modal: Gagal -->
-    <div id="errorPopup" class="popup fixed inset-0 z-[9999] hidden items-center justify-center bg-black/60 p-4">
-      <div class="w-full max-w-md rounded-4xl md:rounded-[50px] bg-white px-6 py-8 text-center shadow-2xl">
-        <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-rose-500">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-11 w-11 text-white"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 class="mt-5 text-xl md:text-3xl font-semibold text-slate-800 tracking-tight">Pengajuan Gagal!</h3>
-        <p id="errorPopupText" class="mt-3.5 text-sm leading-tight text-slate-500">
-          Terjadi kesalahan, silakan coba lagi.
-        </p>
-        <button type="button" id="errorPopupClose"
-          class="mt-8 rounded-xl bg-slate-200 hover:bg-slate-300 px-8 py-2 text-sm font-medium text-slate-700 transition-colors cursor-pointer">
-          Kembali
-        </button>
-      </div>
-    </div>
-
-    <!-- Overlay Modal: Loading (tidak bisa ditutup manual, hanya hilang otomatis) -->
-    <div id="loadingPopup" class="popup fixed inset-0 z-[9999] hidden items-center justify-center bg-black/60 p-4">
-      <div class="w-full max-w-sm rounded-2xl bg-white px-6 py-8 text-center shadow-2xl">
-
-        <!-- Animasi: dua ring berputar arah berlawanan -->
-        <div class="mx-auto relative h-20 w-20">
-          <div class="absolute inset-0 rounded-full border-4 border-indigo-100"></div>
-          <div class="absolute inset-0 rounded-full border-4 border-transparent border-t-indigo-600 animate-spin"></div>
-          <div class="absolute inset-2 rounded-full border-4 border-transparent border-b-sky-400" style="animation: spin 1.4s linear infinite reverse;"></div>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-7 w-7 text-indigo-600">
-              <path d="M12 16V4m0 0L7 9m5-5l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Overlay Modal: Sukses -->
+      <div
+        id="successPopup"
+        class="popup fixed inset-0 z-[9999] hidden items-center justify-center bg-black/60 p-4"
+      >
+        <div
+          class="w-full max-w-md rounded-4xl md:rounded-[50px] bg-white px-6 py-8 text-center shadow-2xl"
+        >
+          <div
+            class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#4FF900]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="h-11 w-11 text-white"
+            >
+              <path
+                d="M20 6L9 17l-5-5"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </div>
-        </div>
-
-        <h3 class="mt-5 text-lg font-bold text-slate-800" id="loadingPopupTitle">Menyiapkan file...</h3>
-        <p class="mt-1 text-sm text-slate-500" id="loadingPopupSubtitle">Mohon tunggu sebentar</p>
-
-        <!-- Progress bar: terisi genuine saat encoding, animasi pulse saat kirim ke server -->
-        <div class="mt-4 h-2 w-full rounded-full bg-slate-100 overflow-hidden">
-          <div id="loadingPopupBar" class="h-full rounded-full bg-indigo-600 transition-all duration-200" style="width:0%"></div>
-        </div>
-
-        <p class="mt-4 text-xs text-slate-400">
-          Jangan tutup atau refresh halaman ini selama proses berlangsung.
-        </p>
-      </div>
-    </div>
-  </main>
-  <!-- END MAIN SECTION -->
-
-  <!-- Back To Top Button -->
-  <button class="button-back-to-top back-to-top" id="backToTop">
-      <svg class="svg-back-to-top" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#000000">
-          <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path>
-      </svg>
-  </button>
-  <!-- Back To Top Button -->
-
-  <!-- Back To HIMTIKA Button -->
-  <div class="Btn-parent">
-      <a href="https://himtika.cs.unsika.ac.id/">
-          <button class="Btn">
-              <div class="sign">
-                  <img
-                      src="assets/images/logo/HIMTIKA.webp"
-                      width="40"
-                      height="40"
-                      alt="HIMTIKA"
-                  />  
-              </div>            
-              <div class="text-button">
-                  <h1>Back To <span>HIMTIKA</span></h1>
-              </div>
+          <h3
+            class="mt-5 text-xl md:text-3xl font-semibold text-slate-800 tracking-tight"
+          >
+            Pengajuan Terkirim!
+          </h3>
+          <p class="mt-3.5 text-sm leading-tight text-slate-500">
+            Formulir pengajuan Media Partner kamu sudah berhasil dikirim. Tim
+            kami akan segera melakukan verifikasi.
+          </p>
+          <button
+            type="button"
+            id="successPopupClose"
+            class="mt-8 rounded-xl bg-slate-200 hover:bg-slate-300 px-8 py-2 text-sm font-medium text-slate-700 transition-colors cursor-pointer"
+          >
+            Kembali
           </button>
-      </a>
-  </div>
-  <!-- Back To HIMTIKA Button -->
-
-  <!----Start Footer-->
-  <footer class="site-footer">
-      <div class="footer-container">
-          <div class="footer-main-row">
-              <div class="footer-brand-col">
-                  <div class="brand-content">
-                      <div class="logo-address-group">
-                          <img src="assets/images/logo/himtika-header.svg" alt="Logo Himtika" class="footer-logo" />
-                          <p class="footer-address">Jl. HS.Ronggo Waluyo, Puseurjaya, Telukjambe Timur, Karawang</p>
-                      </div>
-                      <div class="footer-social-wrapper">
-                          <a href="https://www.instagram.com/himtika_unsika" target="_blank" class="footer-social-link">
-                              <svg width="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" /></svg>
-                          </a>
-                          <a href="https://www.linkedin.com/company/himtikaofficial/" target="_blank" class="footer-social-link">
-                              <svg width="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.2235 0H1.772C0.792 0 0 0.7735 0 1.73V22.265C0 23.222 0.792 24 1.772 24H22.2235C23.2035 24 24 23.222 24 22.27V1.73C24 0.773 23.203 0 22.2235 0ZM7.12 20.4515H3.558V8.9955H7.1205L7.12 20.4515ZM5.339 7.435C5.06781 7.43546 4.79918 7.38246 4.54849 7.27903C4.29779 7.17559 4.06995 7.02376 3.87798 6.83221C3.686 6.64065 3.53367 6.41314 3.4297 6.16267C3.32572 5.9122 3.27213 5.64369 3.272 5.3725C3.27213 5.10131 3.32572 4.8328 3.4297 4.58233C3.53367 4.33186 3.686 4.10435 3.87798 3.91279C4.06995 3.72124 4.29779 3.56941 4.54849 3.46597C4.79918 3.36254 5.06781 3.30954 5.339 3.31C5.88601 3.31 6.41061 3.5273 6.79741 3.91409C7.1842 4.30089 7.4015 4.82549 7.4015 5.3725C7.4015 5.91951 7.1842 6.44411 6.79741 6.83091C6.41061 7.2177 5.88601 7.435 5.339 7.435ZM20.4515 20.452H16.894V14.883C16.894 13.5565 16.8705 11.8455 15.042 11.8455C13.1905 11.8455 12.9095 13.2935 12.9095 14.789V20.4515H9.356V8.9955H12.769V10.5605H12.8155C13.289 9.6605 14.4515 8.7095 16.181 8.7095C19.786 8.7095 20.4515 11.0815 20.4515 14.1655V20.452Z" /></svg>
-                          </a>
-                          <a href="https://www.youtube.com/@HimtikaOfficial" target="_blank" class="footer-social-link">
-                              <svg width="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
-                          </a>
-                          <a href="https://www.tiktok.com/@himtika_unsika" target="_blank" class="footer-social-link">
-                              <svg width="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" /></svg>
-                          </a>
-                          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=himtika@unsika.ac.id" target="_blank" class="footer-social-link">
-                              <svg width="24" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.66626 5.1665H23.3333C24.3403 5.1665 25.1661 5.99247 25.1663 6.99951V20.9995C25.1663 22.0067 24.3404 22.8335 23.3333 22.8335H4.66626C3.65922 22.8333 2.83325 22.0066 2.83325 20.9995V6.99951C2.83342 6.05552 3.55932 5.27085 4.47974 5.17627L4.66626 5.1665ZM23.0686 8.90869L13.9993 14.5767L4.93188 8.90869L4.16626 8.43115V21.4995H23.8333V8.43115L23.0686 8.90869ZM4.40161 7.42432L13.7346 13.2573L14.0002 13.4224L14.2649 13.2573L23.5979 7.42432L25.0764 6.49951H2.9231L4.40161 7.42432Z" fill="currentColor" stroke="currentColor"/></svg>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="footer-grid-col">
-                  <div class="footer-links-grid">
-                      <div class="link-group tentang-kami">
-                          <div>
-                              <h3 class="group-title">Tentang Kami</h3>
-                              <ul class="group-list">
-                                  <li><a href="https://himtika.cs.unsika.ac.id/struktur-organisasi">Struktur Organisasi</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/sejarah-himtika">Sejarah</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/logo-himtika">Logo</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/galeri-himtika">Galeri</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/grand-design-himtika">Grand Design</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/visi-misi">Visi Misi</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/kontak-kami">Kontak Kami</a></li>
-                              </ul>
-                          </div>
-                      </div>
-
-                      <div class="link-group align-right-lg media-hp-footer">
-                          <div>
-                              <h3 class="group-title">Media</h3>
-                              <ul class="group-list">
-                                  <li><a href="https://www.instagram.com/himtika_unsika/" target="_blank">Berita</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/hikode/" target="_blank">Artikel HIMTIKA</a></li>
-                                  <li><a href="https://www.instagram.com/cnc_himtika/" target="_blank">Info Lomba</a></li>
-                              </ul>
-                          </div>
-                      </div>
-
-                      <div class="link-group align-center-lg">
-                          <div>
-                              <h3 class="group-title">Event</h3>
-                              <ul class="group-list">
-                                  <li><a href="https://himtika.cs.unsika.ac.id/open-project/" target="_blank">Create and Compete</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/himtika-exchange/" target="_blank">HIMTIKA Exchange</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/hgtc/" target="_blank">HGTC</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/studyclub/" target="_blank">Study Club</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/pekan-it/" target="_blank">Pekan IT: NIC</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/pekan-it/detail-semantik/" target="_blank">Pekan IT: Semantik IC</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/lkmmpd/" target="_blank">LKMM-PD</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/diesnatalis/" target="_blank">Dies Natalis</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/it-bootcamp/" target="_blank">IT Bootcamp</a></li>
-                              </ul>
-                          </div>
-                      </div>
-
-                      <div class="link-group align-right-lg aplikasi-publik">
-                          <div>
-                              <h3 class="group-title aplikasi-publik">Aplikasi Publik</h3>
-                              <ul class="group-list">
-                                  <li><a href="https://himtalks.vercel.app/himtalks" target="_blank">Himtalks</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/himtika-awards/" target="_blank">HIMTIKA Award</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/media-partner/" target="_blank">Media Partner</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/corporation/" target="_blank">Corporation</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/kalender/" target="_blank">Kalender</a></li>
-                                  <li><a href="https://himtika.cs.unsika.ac.id/dosen/" target="_blank">Profil Tenaga Pendidik</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="footer-bottom">
-              <p class="copyright-text">Licensed, Registered, and Authorized by</p>
-              <div class="authorized-brand">
-                  <img src="assets/images/logo/HIMTIKA.webp" alt="HIMTIKA" class="mini-logo" />
-                  <span>HIMTIKA 2026</span>
-              </div>
-          </div>
+        </div>
       </div>
-  </footer>
-  <!-- Footer End -->
 
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/kerjasama.js"></script>
-</body>
+      <!-- Overlay Modal: Gagal -->
+      <div
+        id="errorPopup"
+        class="popup fixed inset-0 z-[9999] hidden items-center justify-center bg-black/60 p-4"
+      >
+        <div
+          class="w-full max-w-md rounded-4xl md:rounded-[50px] bg-white px-6 py-8 text-center shadow-2xl"
+        >
+          <div
+            class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-rose-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="h-11 w-11 text-white"
+            >
+              <path
+                d="M6 6l12 12M18 6L6 18"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h3
+            class="mt-5 text-xl md:text-3xl font-semibold text-slate-800 tracking-tight"
+          >
+            Pengajuan Gagal!
+          </h3>
+          <p
+            id="errorPopupText"
+            class="mt-3.5 text-sm leading-tight text-slate-500"
+          >
+            Terjadi kesalahan, silakan coba lagi.
+          </p>
+          <button
+            type="button"
+            id="errorPopupClose"
+            class="mt-8 rounded-xl bg-slate-200 hover:bg-slate-300 px-8 py-2 text-sm font-medium text-slate-700 transition-colors cursor-pointer"
+          >
+            Kembali
+          </button>
+        </div>
+      </div>
+
+      <!-- Overlay Modal: Loading (tidak bisa ditutup manual, hanya hilang otomatis) -->
+      <div
+        id="loadingPopup"
+        class="popup fixed inset-0 z-[9999] hidden items-center justify-center bg-black/60 p-4"
+      >
+        <div
+          class="w-full max-w-sm rounded-2xl bg-white px-6 py-8 text-center shadow-2xl"
+        >
+          <!-- Animasi: dua ring berputar arah berlawanan -->
+          <div class="mx-auto relative h-20 w-20">
+            <div
+              class="absolute inset-0 rounded-full border-4 border-indigo-100"
+            ></div>
+            <div
+              class="absolute inset-0 rounded-full border-4 border-transparent border-t-indigo-600 animate-spin"
+            ></div>
+            <div
+              class="absolute inset-2 rounded-full border-4 border-transparent border-b-sky-400"
+              style="animation: spin 1.4s linear infinite reverse"
+            ></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="h-7 w-7 text-indigo-600"
+              >
+                <path
+                  d="M12 16V4m0 0L7 9m5-5l5 5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <h3
+            class="mt-5 text-lg font-bold text-slate-800"
+            id="loadingPopupTitle"
+          >
+            Menyiapkan file...
+          </h3>
+          <p class="mt-1 text-sm text-slate-500" id="loadingPopupSubtitle">
+            Mohon tunggu sebentar
+          </p>
+
+          <!-- Progress bar: terisi genuine saat encoding, animasi pulse saat kirim ke server -->
+          <div
+            class="mt-4 h-2 w-full rounded-full bg-slate-100 overflow-hidden"
+          >
+            <div
+              id="loadingPopupBar"
+              class="h-full rounded-full bg-indigo-600 transition-all duration-200"
+              style="width: 0%"
+            ></div>
+          </div>
+
+          <p class="mt-4 text-xs text-slate-400">
+            Jangan tutup atau refresh halaman ini selama proses berlangsung.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- END MAIN SECTION -->
+
+    <!-- Back To Top Button -->
+    <button class="button-back-to-top back-to-top" id="backToTop">
+      <svg
+        class="svg-back-to-top"
+        xmlns="http://www.w3.org/2000/svg"
+        height="25px"
+        viewBox="0 -960 960 960"
+        width="25px"
+        fill="#000000"
+      >
+        <path
+          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+        ></path>
+      </svg>
+    </button>
+    <!-- Back To Top Button -->
+
+    <!-- Back To HIMTIKA Button -->
+    <div class="Btn-parent">
+      <a href="https://himtika.cs.unsika.ac.id/">
+        <button class="Btn">
+          <div class="sign">
+            <img
+              src="assets/images/logo/HIMTIKA.webp"
+              width="40"
+              height="40"
+              alt="HIMTIKA"
+            />
+          </div>
+          <div class="text-button">
+            <h1>Back To <span>HIMTIKA</span></h1>
+          </div>
+        </button>
+      </a>
+    </div>
+    <!-- Back To HIMTIKA Button -->
+
+    <!----Start Footer-->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-main-row">
+          <div class="footer-brand-col">
+            <div class="brand-content">
+              <div class="logo-address-group">
+                <img
+                  src="assets/images/logo/himtika-header.svg"
+                  alt="Logo Himtika"
+                  class="footer-logo"
+                />
+                <p class="footer-address">
+                  Jl. HS.Ronggo Waluyo, Puseurjaya, Telukjambe Timur, Karawang
+                </p>
+              </div>
+              <div class="footer-social-wrapper">
+                <a
+                  href="https://www.instagram.com/himtika_unsika"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="22"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/himtikaofficial/"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.2235 0H1.772C0.792 0 0 0.7735 0 1.73V22.265C0 23.222 0.792 24 1.772 24H22.2235C23.2035 24 24 23.222 24 22.27V1.73C24 0.773 23.203 0 22.2235 0ZM7.12 20.4515H3.558V8.9955H7.1205L7.12 20.4515ZM5.339 7.435C5.06781 7.43546 4.79918 7.38246 4.54849 7.27903C4.29779 7.17559 4.06995 7.02376 3.87798 6.83221C3.686 6.64065 3.53367 6.41314 3.4297 6.16267C3.32572 5.9122 3.27213 5.64369 3.272 5.3725C3.27213 5.10131 3.32572 4.8328 3.4297 4.58233C3.53367 4.33186 3.686 4.10435 3.87798 3.91279C4.06995 3.72124 4.29779 3.56941 4.54849 3.46597C4.79918 3.36254 5.06781 3.30954 5.339 3.31C5.88601 3.31 6.41061 3.5273 6.79741 3.91409C7.1842 4.30089 7.4015 4.82549 7.4015 5.3725C7.4015 5.91951 7.1842 6.44411 6.79741 6.83091C6.41061 7.2177 5.88601 7.435 5.339 7.435ZM20.4515 20.452H16.894V14.883C16.894 13.5565 16.8705 11.8455 15.042 11.8455C13.1905 11.8455 12.9095 13.2935 12.9095 14.789V20.4515H9.356V8.9955H12.769V10.5605H12.8155C13.289 9.6605 14.4515 8.7095 16.181 8.7095C19.786 8.7095 20.4515 11.0815 20.4515 14.1655V20.452Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.youtube.com/@HimtikaOfficial"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@himtika_unsika"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=himtika@unsika.ac.id"
+                  target="_blank"
+                  class="footer-social-link"
+                >
+                  <svg
+                    width="24"
+                    viewBox="0 0 28 28"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.66626 5.1665H23.3333C24.3403 5.1665 25.1661 5.99247 25.1663 6.99951V20.9995C25.1663 22.0067 24.3404 22.8335 23.3333 22.8335H4.66626C3.65922 22.8333 2.83325 22.0066 2.83325 20.9995V6.99951C2.83342 6.05552 3.55932 5.27085 4.47974 5.17627L4.66626 5.1665ZM23.0686 8.90869L13.9993 14.5767L4.93188 8.90869L4.16626 8.43115V21.4995H23.8333V8.43115L23.0686 8.90869ZM4.40161 7.42432L13.7346 13.2573L14.0002 13.4224L14.2649 13.2573L23.5979 7.42432L25.0764 6.49951H2.9231L4.40161 7.42432Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-grid-col">
+            <div class="footer-links-grid">
+              <div class="link-group tentang-kami">
+                <div>
+                  <h3 class="group-title">Tentang Kami</h3>
+                  <ul class="group-list">
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/struktur-organisasi"
+                        >Struktur Organisasi</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/sejarah-himtika"
+                        >Sejarah</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/logo-himtika"
+                        >Logo</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/galeri-himtika"
+                        >Galeri</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/grand-design-himtika"
+                        >Grand Design</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/visi-misi"
+                        >Visi Misi</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://himtika.cs.unsika.ac.id/kontak-kami"
+                        >Kontak Kami</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="link-group align-right-lg media-hp-footer">
+                <div>
+                  <h3 class="group-title">Media</h3>
+                  <ul class="group-list">
+                    <li>
+                      <a
+                        href="https://www.instagram.com/himtika_unsika/"
+                        target="_blank"
+                        >Berita</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/hikode/"
+                        target="_blank"
+                        >Artikel HIMTIKA</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/cnc_himtika/"
+                        target="_blank"
+                        >Info Lomba</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="link-group align-center-lg">
+                <div>
+                  <h3 class="group-title">Event</h3>
+                  <ul class="group-list">
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/cnc/"
+                        target="_blank"
+                        >Create and Compete</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/himtika-exchange/"
+                        target="_blank"
+                        >HIMTIKA Exchange</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/hgtc/"
+                        target="_blank"
+                        >HGTC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/studyclub/"
+                        target="_blank"
+                        >Study Club</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/pekan-it/"
+                        target="_blank"
+                        >Pekan IT: NIC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/pekan-it/detail-semantik/"
+                        target="_blank"
+                        >Pekan IT: Semantik IC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/lkmmpd/"
+                        target="_blank"
+                        >LKMM-PD</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/diesnatalis/"
+                        target="_blank"
+                        >Dies Natalis</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/it-bootcamp/"
+                        target="_blank"
+                        >IT Bootcamp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="link-group align-right-lg aplikasi-publik">
+                <div>
+                  <h3 class="group-title aplikasi-publik">Aplikasi Publik</h3>
+                  <ul class="group-list">
+                    <li>
+                      <a
+                        href="https://himtalks.vercel.app/himtalks"
+                        target="_blank"
+                        >Himtalks</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/himtika-awards/"
+                        target="_blank"
+                        >HIMTIKA Award</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/media-partner/"
+                        target="_blank"
+                        >Media Partner</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/corporation/"
+                        target="_blank"
+                        >Corporation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/kalender/"
+                        target="_blank"
+                        >Kalender</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://himtika.cs.unsika.ac.id/dosen/"
+                        target="_blank"
+                        >Profil Tenaga Pendidik</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright-text">Licensed, Registered, and Authorized by</p>
+          <div class="authorized-brand">
+            <img
+              src="assets/images/logo/HIMTIKA.webp"
+              alt="HIMTIKA"
+              class="mini-logo"
+            />
+            <span>HIMTIKA 2026</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/kerjasama.js"></script>
+  </body>
 </html>
