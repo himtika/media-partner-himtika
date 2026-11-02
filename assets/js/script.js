@@ -68,9 +68,44 @@ function updateNavbar() {
         header.style.transform = "translateY(0)";
         header.style.opacity = "1";
     }
+
+    // Announcement mengikuti scroll dan navbar
+    const announcement = document.querySelector(
+        ".medpart-announcement-slot"
+    );
+
+    if (announcement) {
+        const initialTop = window.innerWidth <= 767 ? 80 : 90;
+        const shouldStick = window.scrollY >= initialTop;
+        const isNavbarFixed = window.scrollY > 600;
+        const navbarHeight = header.offsetHeight;
+
+        const wasSticky = announcement.classList.contains("is-sticky");
+        // Jangan animasikan saat pertama kali berubah menjadi sticky
+        if (!shouldStick) {
+            announcement.classList.remove("is-animated", "is-sticky");
+        } else {
+            announcement.classList.add("is-sticky");
+
+            if (wasSticky) {
+                announcement.classList.add("is-animated");
+            } else {
+                announcement.classList.remove("is-animated");
+            }
+        }
+        
+        const announcementGap = 8;
+        announcement.style.setProperty(
+            "--announcement-top",
+            shouldStick && isNavbarFixed
+                ? `${navbarHeight + announcementGap}px`
+                : `${announcementGap}px`
+        );
+    }
 }
 
 window.addEventListener("scroll", updateNavbar);
+window.addEventListener("resize", updateNavbar);
 updateNavbar();
 
 // Hamburger
